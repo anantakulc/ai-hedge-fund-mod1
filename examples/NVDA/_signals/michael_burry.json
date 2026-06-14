@@ -1,0 +1,17 @@
+{
+  "persona": "michael_burry",
+  "lens": "bear",
+  "signal": "bearish",
+  "confidence": 62,
+  "reasoning": "FCF yield 0.9% trailing, 1.9% on peak FY26. EV/EBIT 37.7. EV/sales 22.8. You're paying perpetuity prices for a hardware cycle at its crest. Inventory up 112% YoY to $21.4B; receivables and customer concentration carry the whole story. Revenue grew off a base that didn't exist three years ago, which is exactly when extrapolation gets dangerous. Margins 60%+ invite the customers (MSFT, GOOGL, AMZN, META) to fund their own silicon, and they are. Balance sheet is fine, net cash, debt/equity 0.07, that's not the risk. The risk is the multiple and the cycle. No margin of safety. Downside to mid-$130s on any capex air-pocket. Pass, lean short.",
+  "key_metrics": {
+    "fcf_yield_pct": 0.93,
+    "ev_to_ebit": 37.7,
+    "debt_to_equity": 0.07,
+    "current_ratio": 3.91,
+    "insider_net_flow_90d_shares": null,
+    "share_count_change_yoy_pct": null,
+    "downside_target_per_share": 135
+  },
+  "data_gaps": ["Insider net flow + buyback share-count detail unavailable (FUNDA_API_KEY absent)"]
+}

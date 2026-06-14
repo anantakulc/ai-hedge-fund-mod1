@@ -1,0 +1,17 @@
+{
+  "persona": "stanley_druckenmiller",
+  "lens": "bull",
+  "signal": "neutral",
+  "confidence": 58,
+  "reasoning": "I size positions on the asymmetry, and I respect price action because the tape tells you when your thesis is working. On the fundamentals, NVIDIA is exactly the kind of secular leader I want to own: revenue still growing 65% on a $216B base, earnings nearly doubling on Street numbers this year, the best franchise in the most important capex cycle of the decade. The catalyst calendar is loaded, Rubin ramping, sovereign AI orders, the August earnings print. Leverage is a non-issue, net cash. That's the bull side, and it's strong.\n\nBut momentum is where I pause, and it matters. The stock is down 9% over the past month, sitting below its 21-day and 50-day averages, RSI in the low 40s, off about 13% from its 52-week high. Over six months it's up only 12% and year-to-date just 9%, while AMD is up 129% and Marvell over 200% year-to-date. When the obvious leader lags the higher-beta names in its own group, it usually means money is rotating into the second-derivative plays and NVIDIA's near-term sentiment has cooled. I don't fight that; I wait for it to turn.\n\nOn the asymmetric math: upside to the Street's mean target near $299 is roughly +46%; a realistic downside on a capex scare or a soft guide is the low $140s, where it traded a year ago, call it -30%. That's roughly 1.5 to 1, not the 3 to 1 I want before I swing hard. The setup is a good business with stalled momentum and a merely fair risk-reward at this price. When I have a real edge I bet big; here I don't yet. I'd rather buy strength on a confirmed breakout above the recent range than anticipate one. Neutral, leaning constructive, waiting for the tape.",
+  "key_metrics": {
+    "revenue_growth_yoy_pct": 65.5,
+    "eps_growth_yoy_pct": 88,
+    "price_momentum_6m_vs_spy_pct": 5,
+    "insider_net_flow_90d": null,
+    "near_term_catalyst": "Q2 FY27 earnings 2026-08-27; Rubin ramp; sovereign AI orders",
+    "asymmetric_ratio_upside_to_downside": 1.5,
+    "net_debt_to_ebitda": -0.36
+  },
+  "data_gaps": ["Insider net flow over 90d unavailable (FUNDA_API_KEY absent)", "6m relative-to-SPY is approximate"]
+}

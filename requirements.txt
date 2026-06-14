@@ -1,0 +1,8 @@
+# ai-hedge-fund-mod1 — Python deps for the compute + render scripts.
+# Install with:  pip install -r requirements.txt
+yfinance>=0.2.40      # free market data (prices, financials) — no API key
+pandas>=2.0           # used by yfinance
+openpyxl>=3.1         # Excel workbook (render_excel_ahf.py)
+reportlab>=4.0        # PDF report (render_report_pdf.py)
+requests>=2.31        # http
+PyYAML>=6.0           # personas.yaml (optional; build_panel embeds a fallback)

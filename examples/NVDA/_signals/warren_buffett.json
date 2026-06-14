@@ -1,0 +1,17 @@
+{
+  "persona": "warren_buffett",
+  "lens": "bull",
+  "signal": "neutral",
+  "confidence": 55,
+  "reasoning": "Let me start with what I admire, because there's plenty. This is a business earning a return on invested capital around 67% and a return on equity north of 75%, carrying almost no debt against $51B of net cash. Owner earnings ran near $128B last year. Gross margins sit in the low-70s, operating margins above 60%. By the raw numbers it's one of the most profitable enterprises I've ever looked at, and the moat in accelerated computing, the CUDA software lock-in plus the networking attach, is real and probably widening for now. So this is a wonderful business. No argument.\n\nThe trouble is the price and my own circle of competence. I've said for decades that I don't know which chip company wins ten years out, and accelerated computing is the fastest-moving corner of an already fast-moving industry. The thing that makes NVDA worth $5 trillion today is the assumption that hyperscaler capex keeps compounding and that nobody, not AMD, not the customers' own silicon, takes the crown. I can't underwrite that with the confidence I'd want. When I buy, I want to be roughly right about the next decade. Here I'd be guessing.\n\nAnd the margin of safety isn't there. On trailing free cash flow the yield is under 1%. You have to believe the forward ramp, FCF doubling and then doubling again, to make today's price reasonable, and that's paying up for a future I can't bank on. A great company at a fair price beats a fair company at a great price; this is a great company at a price that already assumes the future works out. I'll watch it with admiration and sit on my hands. Neutral, and that's mostly humility about the price and my own circle, not a knock on the business.",
+  "key_metrics": {
+    "owner_earnings_5y_cagr_pct": 194,
+    "fcf_yield_pct": 0.93,
+    "roic_5y_avg_pct": 67,
+    "debt_to_equity": 0.07,
+    "interest_coverage": null,
+    "estimated_intrinsic_value_per_share": 190,
+    "margin_of_safety_pct": -8
+  },
+  "data_gaps": ["Interest coverage not meaningful (net cash, immaterial debt)", "Maintenance vs growth capex split not disclosed; used total capex (low at ~3% of revenue)"]
+}

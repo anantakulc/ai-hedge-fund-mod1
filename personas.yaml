@@ -1,0 +1,137 @@
+# Persona panel — translated from srqt2/ai-hedge-fund/src/agents/
+# Used by Alpha to know who to dispatch and by Portfolio Manager to weight signals.
+
+schema_version: "1.0"
+source_repo: "srqt2/ai-hedge-fund"
+translation_date: "2026-06-13"
+
+personas:
+  # Bull-lens (9)
+  - id: warren_buffett
+    lens: bull
+    weight: 1.4         # high weight — Buffett is the gold standard for quality + valuation
+    one_liner: "Durable moats, owner earnings, ROIC, intrinsic value with margin of safety"
+    focus_metrics: [moat_quality, owner_earnings, roic_5y, debt_equity, margin_of_safety]
+
+  - id: charlie_munger
+    lens: bull
+    weight: 1.2
+    one_liner: "Inversion: avoid the dumb mistakes. Quality compounds when you don't sell"
+    focus_metrics: [moat_durability, capital_allocation_track_record]
+
+  - id: peter_lynch
+    lens: bull
+    weight: 1.0
+    one_liner: "GARP via PEG ratio. Invest in what you know. Look for ten-baggers"
+    focus_metrics: [peg_ratio, earnings_growth_consistency, debt_to_equity]
+
+  - id: phil_fisher
+    lens: bull
+    weight: 1.0
+    one_liner: "Scuttlebutt + R&D + secular growth. Pay up for exceptional companies"
+    focus_metrics: [rnd_intensity, operating_margin_consistency, mgmt_quality]
+
+  - id: cathie_wood
+    lens: bull
+    weight: 0.8         # lower — disruptive-growth lens needs the right setup; don't let it dominate value names
+    one_liner: "Disruptive innovation, exponential TAM, 5-year horizon"
+    focus_metrics: [revenue_growth_3y, tam_expansion, rnd_intensity]
+
+  - id: bill_ackman
+    lens: bull
+    weight: 1.1
+    one_liner: "Quality + FCF + activism. Concentrated bets on simple businesses"
+    focus_metrics: [fcf_yield, fcf_growth, leverage_efficiency, buyback_consistency]
+
+  - id: mohnish_pabrai
+    lens: bull
+    weight: 1.1
+    one_liner: "Heads I win, tails I don't lose much. Low risk, high uncertainty"
+    focus_metrics: [downside_protection, fcf_yield, leverage_ratio]
+
+  - id: stanley_druckenmiller
+    lens: bull
+    weight: 1.0
+    one_liner: "Asymmetric risk-reward. Momentum-aware. Cut losses fast"
+    focus_metrics: [revenue_momentum, price_momentum_6m, insider_activity, leverage]
+
+  - id: rakesh_jhunjhunwala
+    lens: bull
+    weight: 0.9         # India-tinted lens — useful but not as broadly applicable to global names
+    one_liner: "Circle of competence, low debt, high ROE, long-term horizon"
+    focus_metrics: [roe_5y, debt_equity, earnings_consistency, margin_of_safety]
+
+  # Bear-lens (3)
+  - id: michael_burry
+    lens: bear
+    weight: 1.3         # high weight on bear side — Burry's data-driven contrarian view is the strongest bear signal
+    one_liner: "Terse, data-driven contrarian. FCF yield, EV/EBIT, insider buying"
+    focus_metrics: [fcf_yield, ev_ebit, debt_equity, insider_net_flow]
+
+  - id: nassim_taleb
+    lens: bear
+    weight: 1.0
+    one_liner: "Antifragility, convexity, tail risk, via negativa"
+    focus_metrics: [leverage, earnings_volatility, skin_in_game, vol_regime]
+
+  - id: ben_graham
+    lens: bear
+    weight: 1.1
+    one_liner: "Net-net, Graham Number, current ratio > 2, debt below 50% of NCAV"
+    focus_metrics: [graham_number, ncav, current_ratio, earnings_stability_10y, dividend_record]
+
+  # Valuation specialist (1) — bull-lens overlap because story-to-numbers usually finds upside
+  - id: aswath_damodaran
+    lens: valuation
+    weight: 1.5         # highest — this is the persona whose output feeds _inputs.json
+    one_liner: "Story-to-numbers FCFF DCF. NYU Stern voice. Margin of safety + relative cross-check"
+    focus_metrics: [revenue_growth_schedule, margins, reinvestment_rate, wacc, terminal_g]
+
+# Computational specialists — not voice-driven, score-based
+specialists:
+  - id: fundamentals
+    weights:
+      profitability: 0.25
+      growth: 0.25
+      financial_health: 0.25
+      valuation: 0.25
+  - id: growth_agent     # custom to srqt2 fork
+    weights:
+      historical_growth: 0.40
+      growth_valuation: 0.25
+      margin_expansion: 0.15
+      insider_conviction: 0.10
+      financial_health: 0.10
+  - id: valuation
+    methods: [dcf, owner_earnings, ev_ebitda, residual_income]
+    feeds_into: "<TICKER>_inputs.json"
+  - id: technicals
+    weights:
+      trend: 0.25
+      momentum: 0.25
+      mean_reversion: 0.20
+      volatility: 0.15
+      stat_arb: 0.15
+  - id: sentiment
+    weights:
+      insider_trades: 0.30
+      news: 0.70
+  - id: news_sentiment   # custom to srqt2 fork — news-only, LLM-classified
+    note: "Subset of sentiment but uses LLM to classify articles without labels"
+
+# Synthesis layer
+synthesis:
+  - id: risk_manager
+    inputs_from: [all_personas, technicals, valuation, sentiment]
+    emits: "_risk.json — structural_concerns, key_risks, position_limit_pct"
+  - id: portfolio_manager
+    inputs_from: [all_personas, all_specialists, risk_manager]
+    emits: "<TICKER>.json + <TICKER>_inputs.json"
+    role: "Final synthesizer — first agent to read all signals together"
+
+# Aggregation rule used by Portfolio Manager
+aggregation:
+  bullish_threshold: 0.55     # weighted persona score > 0.55 → BUY recommendation
+  bearish_threshold: 0.45     # weighted persona score < 0.45 → SELL recommendation
+  neutral_band: [0.45, 0.55]  # → HOLD
+  weighted_score_formula: "sum(persona.weight * signal_value) / sum(persona.weight) where signal_value = {bullish: 1.0, neutral: 0.5, bearish: 0.0}"

@@ -1,0 +1,16 @@
+{
+  "persona": "peter_lynch",
+  "lens": "bull",
+  "signal": "bullish",
+  "confidence": 72,
+  "reasoning": "Here's a company everybody already knows. You can't read a newspaper or sit through a dinner without somebody mentioning NVIDIA, and that usually makes me nervous, because the crowded names are where you overpay. So I went straight to the PEG, which is the number I trust most. Forward P/E is about 16. Forward earnings growth on the Street is roughly 88% this fiscal year and around 42% the next, call it a blended 65% near term. That puts the PEG somewhere between 0.2 and 0.3. I have to rub my eyes at that. A PEG under 1.0 is attractive; under 0.3 on a company growing earnings this fast is the kind of thing that doesn't show up often, and it usually means the market is bracing for the growth to fall off a cliff.\n\nThat's the catch, and I won't pretend it away. The reason the forward P/E is only 16 against a trailing 31 is that earnings are expected to balloon, so the 'E' does the heavy lifting. If the AI buildout slows, those forward estimates come down and the cheap PEG was a mirage. This is a fast grower, and fast growers are where you find your ten-baggers and also where you find your heartbreaks.\n\nBut look at the actual business. Revenue went from $27B to $216B in three years. Earnings compounded over 200% a year off that base. Debt is basically nothing, $11B against $62B of cash and short-term investments, so there's no balance-sheet landmine. Debt/equity is 0.07, miles below my 1.5 red flag. The story is simple enough for a sixth grader: they make the shovels everyone needs to dig for AI gold, and they've got the best shovels. Ten-bagger from here? Probably not at a $5 trillion cap, the law of large numbers bites. But a stock growing earnings 40%+ trading at a PEG of 0.25 is too cheap on its own math to ignore. Bullish, eyes open on the growth assumption.",
+  "key_metrics": {
+    "peg_ratio": 0.25,
+    "eps_growth_5y_cagr_pct": null,
+    "revenue_growth_5y_cagr_pct": 100,
+    "debt_to_equity": 0.07,
+    "forward_pe": 16.1,
+    "ten_bagger_potential": "low"
+  },
+  "data_gaps": ["5y EPS CAGR distorted by pre-AI base (FY22 EPS near zero); used 3y revenue CAGR ~100% as the growth anchor"]
+}

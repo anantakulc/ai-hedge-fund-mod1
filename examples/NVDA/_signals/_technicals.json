@@ -1,0 +1,15 @@
+{
+  "specialist": "technicals",
+  "signal": "neutral",
+  "confidence": 40,
+  "reasoning": {
+    "trend_following": {"signal": "neutral", "confidence": 45, "metrics": {"ema_8": 207.87, "ema_21": 211.03, "ema_55": 205.47, "adx": null, "stack_aligned": false}},
+    "mean_reversion": {"signal": "neutral", "confidence": 35, "metrics": {"z_score_50d": -0.11, "rsi_14": 42.3, "rsi_28": null, "bb_position": "mid-band"}},
+    "momentum": {"signal": "neutral", "confidence": 40, "metrics": {"return_1m_pct": -9.0, "return_3m_pct": 14.0, "return_6m_pct": 11.8, "weighted_return_pct": 4.1, "volume_confirms": false}},
+    "volatility": {"signal": "bearish", "confidence": 45, "metrics": {"vol_regime": "elevated", "vol_z_score_252d": null, "atr_ratio": 1.25}},
+    "statistical_arbitrage": {"signal": "neutral", "confidence": 30, "metrics": {"hurst_exponent": null, "regime_type": "random_walk", "skewness": -0.3, "kurtosis": 5.06}},
+    "ensemble_weighted_score": 0.47,
+    "components_in_agreement": 3
+  },
+  "data_gaps": ["ADX and Hurst exponent not computed in this run", "Price sits below 8/21-EMA (short-term soft) but above the 200-DMA at $189 (longer trend intact); near-term tape is choppy, not trending"]
+}

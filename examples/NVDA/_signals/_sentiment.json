@@ -1,0 +1,38 @@
+{
+  "specialist": "sentiment",
+  "signal": "neutral",
+  "confidence": 25,
+  "reasoning": {
+    "insider_trading": {
+      "signal": "neutral",
+      "confidence": 0,
+      "metrics": {
+        "total_trades": null,
+        "bullish_trades": null,
+        "bearish_trades": null,
+        "bullish_weighted_shares": null,
+        "bearish_weighted_shares": null,
+        "weight": 0.0,
+        "weighted_score": null
+      }
+    },
+    "news_sentiment": {
+      "signal": "neutral",
+      "confidence": 30,
+      "metrics": {
+        "total_articles": 10,
+        "bullish_articles": 3,
+        "bearish_articles": 1,
+        "neutral_articles": 6,
+        "weight": 1.0,
+        "weighted_score": 0.55
+      }
+    },
+    "combined_analysis": {
+      "total_weighted_bullish": 3,
+      "total_weighted_bearish": 1,
+      "signal_determination": "Insider weight set to 0 (FUNDA_API_KEY absent); news re-weighted to 100%. Only 10 articles available, most generic AI-bullish or off-ticker; one NVDA-specific positive (LG humanoid-robot + data-center partnership). Net score 0.55 sits at the neutral/bullish boundary; thin sample forces low confidence and a neutral call."
+    }
+  },
+  "data_gaps": ["No insider data (FUNDA_API_KEY absent), insider component dropped", "No Adanos cross-source sentiment (ADANOS_API_KEY absent)", "yfinance returned only 10 news items; sample too thin for a confident read"]
+}

@@ -1,0 +1,25 @@
+{
+  "specialist": "news_sentiment",
+  "signal": "neutral",
+  "confidence": 28,
+  "reasoning": {
+    "news_sentiment": {
+      "signal": "neutral",
+      "confidence": 28,
+      "metrics": {
+        "total_articles": 10,
+        "bullish_articles": 3,
+        "bearish_articles": 1,
+        "neutral_articles": 6,
+        "articles_classified_by_llm": 4,
+        "weighted_sentiment_score": 0.12
+      }
+    },
+    "top_3_headlines_referenced": [
+      {"headline": "NVIDIA Corporation (NVDA) Partners With South Korea's LG Group On Humanoid Robots And Data Centers", "sentiment": "bullish", "confidence": 60, "summary": "Expands physical-AI and data-center footprint via a marquee partner; incremental positive, not yet material to revenue."},
+      {"headline": "AI trade is 'fantastic right now' and 'something you have to be in': Analyst", "sentiment": "bullish", "confidence": 45, "summary": "Macro AI-sentiment tailwind, not NVDA-specific."},
+      {"headline": "SpaceX stock gains, space companies fall, chips mixed on IPO news", "sentiment": "neutral", "confidence": 40, "summary": "Chips described as mixed on the session; no clear NVDA directional read."}
+    ]
+  },
+  "data_gaps": ["yfinance returned only 10 articles (< the 100 the workflow targets); confidence reduced proportionally", "Most coverage is generic AI-trade or off-ticker; weighted score +0.12 sits inside the neutral band (-0.15 to +0.15)", "No Adanos/Funda news enrichment (API keys absent)"]
+}

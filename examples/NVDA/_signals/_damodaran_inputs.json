@@ -1,0 +1,38 @@
+{
+  "method": "dcf",
+  "assumptions": {
+    "revenue_growth_yr1_pct": {"value": 81.0, "reasoning": "FY27E (year ending Jan-2027) consensus ~$391B vs FY26 actual $215.9B = +81%. Anchored to visible Blackwell/GB300 order book; yfinance revenue_estimate 0y avg $391.66B, 52 analysts."},
+    "revenue_growth_yr2_pct": {"value": 41.0, "reasoning": "FY28E consensus ~$552B = +41%. Rubin platform full year + sovereign AI; yfinance revenue_estimate +1y avg $551.66B."},
+    "revenue_growth_yr3_pct": {"value": 30.0, "reasoning": "Fade begins as the law of large numbers bites past $700B revenue; refresh cycle + inference offset hyperscaler optimization. Damodaran fade discipline."},
+    "revenue_growth_yr4_pct": {"value": 22.0, "reasoning": "Continued fade; custom silicon takes inference share, training stays NVDA-anchored. Above-GDP but decelerating."},
+    "revenue_growth_yr5_pct": {"value": 16.0, "reasoning": "Year-5 growth ~16%; 5y CAGR lands near 38%. AI capex still expanding but maturing."},
+    "target_operating_margin_pct": {"value": 49.0, "reasoning": "Terminal-year EBIT margin eased from current 60.4% (FY26 actual) toward 48-49% over 10y as AMD + customer ASICs pressure price. Still elite; reflects CUDA/software moat but honest competitive erosion. Damodaran target-margin discipline."},
+    "tax_rate_pct": {"value": 16.0, "reasoning": "FY26 effective tax was 15.1%; normalized up to 16% as geographic mix and global minimum tax bite. Damodaran."},
+    "reinvestment_rate_pct_ebit": {"value": 8.0, "reasoning": "Fabless, capital-light: capex ~3% of revenue, D&A ~3%, modest WC drag ~1.2%. Net reinvestment is light relative to NOPAT, driving high FCF conversion. Damodaran (capex + WC change as % of EBIT)."},
+    "wacc_pct": {"value": 15.3, "reasoning": "Ke = rf + beta x ERP = 4.4% + 2.00 x 5.5% = 15.4%. Beta 2.00 reflects the REAL regression beta of 2.20 (not GER's softened 1.30); kept high because NVDA genuinely moves ~2x the market. Debt weight ~1% (immaterial: $11B debt vs $62B cash), after-tax Kd 3.5%. WACC = 0.99 x 15.4% + 0.01 x 3.5% = 15.28%. This honest cost of capital is the entire A/B gap vs GER's 9.5%. Damodaran."},
+    "terminal_growth_pct": {"value": 4.0, "reasoning": "Capped at the 10Y risk-free rate of 4.4% (set at 4.0%). Damodaran is strict: no firm outgrows the economy in perpetuity. AI compute treated as a steady GDP-plus infrastructure slice by FY36."}
+  },
+  "scenarios": {
+    "bear": {
+      "key_changes": {"wacc_pct": 16.4, "terminal_growth_pct": 3.0, "revenue_growth_yr1_pct": 65.0, "target_operating_margin_pct": 40.0},
+      "implied_value_per_share": 65,
+      "reasoning": "Beta 2.2 -> WACC 16.4%, terminal 3.0%. Hyperscaler capex air-pocket, AMD MI-series + customer ASICs take training share faster, gross margin compresses toward 40% terminal. Growth fades hard after FY27. The cycle peaks and the multiple resets."
+    },
+    "base": {
+      "key_changes": {},
+      "implied_value_per_share": 132,
+      "reasoning": "Beta 2.0 -> WACC 15.3%, terminal 4.0%. Street near-term revenue, then a disciplined 10y fade to GDP-plus, margin easing to 49%. Honest base lands ~36% below the $205 price: at a real cost of capital, the market already discounts a near-flawless decade."
+    },
+    "bull": {
+      "key_changes": {"wacc_pct": 13.4, "terminal_growth_pct": 4.2, "revenue_growth_yr1_pct": 85.0, "target_operating_margin_pct": 51.0},
+      "implied_value_per_share": 244,
+      "reasoning": "Beta 1.65 (US-semi bottom-up) -> WACC 13.4%, terminal 4.2%. Rubin overshoots, sovereign AI prints $80B+, gross margin re-expands on HBM4 yields, growth sustains 50%+ deeper into the window, margin holds 51% terminal. Only at a softer (still-defensible) cost of capital does intrinsic value exceed today's price."
+    }
+  },
+  "cross_check": {
+    "ev_ebitda_median_peer": 30.0,
+    "ev_sales_median_peer": 18.0,
+    "implied_value_per_share_relative": 249,
+    "reasoning": "AI-semi peer set (AMD 111x, AVGO 44x, MRVL 91x, TSM 5x) is dispersed; ex-extremes the platform-relevant median sits ~30x EV/EBITDA. Applied to forward FY28E EBITDA ~$200B = ~$6,000B EV, +$51B net cash, /24.221B shares ~ $249. Semis genuinely trade on the multiple, so this is a legitimate counterweight to the perpetuity DCF and the reason the blended target sits above the base DCF."
+  }
+}

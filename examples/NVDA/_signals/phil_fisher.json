@@ -1,0 +1,16 @@
+{
+  "persona": "phil_fisher",
+  "lens": "bull",
+  "signal": "bullish",
+  "confidence": 80,
+  "reasoning": "I look for the rare company that combines a long runway with management that keeps widening the lead, and I'm willing to pay a full price for it. NVIDIA qualifies on the growth axis emphatically. Revenue compounded from $27B in fiscal 2023 to $216B in fiscal 2026, a three-year rate near 100% a year. That isn't a single product spike; it's the data-center platform broadening from GPUs into networking (Spectrum-X, NVLink) and a growing software and systems layer. The breadth matters to me. When growth comes from several reinforcing places rather than one SKU, it tends to persist.\n\nMargins tell the same story. Operating margin has run in a band from roughly 54% to 62% over the last three years and sits above 60% today, with gross margin in the low-70s. That is exceptional consistency for hardware, and it reflects pricing power and a software moat, not just a cyclical up-leg. On R&D, the signature Fisher test: NVIDIA spent about $18.5B last year, roughly 8.6% of revenue. The percentage looks lower than a classic software name only because revenue exploded; the absolute dollars nearly doubled year on year, and the cadence (Hopper to Blackwell to Rubin to Feynman, a new architecture roughly annually) is the most aggressive product pipeline in semiconductors. That is a company plowing earnings back into the next decade, exactly what I want to see.\n\nManagement is the other pillar. Jensen Huang founded the company in 1993 and is still running it, a multi-decade owner-operator with a record of betting early on CUDA and accelerated computing when the market doubted both. Capital allocation has been sensible: buybacks funded from real cash, a balance sheet with $51B net cash, no leverage games. The competitive advantages, the CUDA developer base, the systems integration, the supply commitments (the $2B each into Coherent and Lumentum to lock photonics), should sustain growth over a three-to-five-year horizon. Valuation is full at roughly 23x EV/sales, but I pay up for exceptional companies, and on forward earnings the multiple is far more reasonable. Bullish.",
+  "key_metrics": {
+    "revenue_5y_cagr_pct": 100,
+    "operating_margin_5y_range_pct": "54-62",
+    "rnd_as_pct_revenue": 8.6,
+    "rnd_growth_trend": "accelerating",
+    "mgmt_tenure_years": 33,
+    "ev_sales_vs_5y_growth": 22.8
+  },
+  "data_gaps": ["Segment-level R&D allocation (DC vs gaming vs auto) not disclosed via yfinance; FUNDA_API_KEY absent so 10-K detail not machine-pulled"]
+}

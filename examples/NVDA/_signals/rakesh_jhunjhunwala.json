@@ -1,0 +1,17 @@
+{
+  "persona": "rakesh_jhunjhunwala",
+  "lens": "bull",
+  "signal": "neutral",
+  "confidence": 60,
+  "reasoning": "I look at a business first and a stock second, and as a business this is one of the finest I have studied. Return on equity has run between 69% and 92% over the last three years, and it sits at 76% today. Debt to equity is 0.07, almost nothing, with cash and investments of $62B dwarfing $11B of debt. Revenue has compounded at extraordinary rates, roughly 100% a year over three years, and earnings have grown even faster. This is reminiscent of the great compounders I backed early in India, companies where the moat, here the software ecosystem and the technology lead in accelerated computing, lets them earn returns most businesses can only dream about. Quality, I have no doubt.\n\nManagement passes my test too. The founder still runs it after three decades, the capital allocation is conservative and shareholder-friendly, buybacks funded from real cash rather than borrowing. Within my circle of competence I understand what they sell and why customers keep coming back.\n\nWhere I must be disciplined is the margin of safety, and this is non-negotiable for me. I demand at least a 30% discount to intrinsic value before I call something a buy. At a $5 trillion valuation, with the trailing free cash flow yield under 1%, the price already embeds years of flawless execution. My estimate of fair value sits close to where it trades, perhaps a touch below, which means the margin of safety is negative, not the 30% cushion I insist on. A great company bought without a margin of safety can still disappoint the investor even as the business thrives. So I will admire it, keep it on my watch list, and wait for the market to give me a price. This doesn't fit the profile of a buy today only because of valuation, not quality. Neutral.",
+  "key_metrics": {
+    "roe_5y_avg_pct": 79,
+    "debt_to_equity": 0.07,
+    "revenue_5y_cagr_pct": 100,
+    "eps_5y_cagr_pct": null,
+    "estimated_intrinsic_value_per_share": 195,
+    "margin_of_safety_pct": -5,
+    "moat_type": "Software ecosystem (CUDA) + technology lead + systems/networking integration"
+  },
+  "data_gaps": ["5y EPS CAGR distorted by near-zero FY22 base; used 3y revenue CAGR", "ROE average uses 3y (FY24-FY26) given the pre-AI base"]
+}

@@ -1,0 +1,16 @@
+{
+  "persona": "nassim_taleb",
+  "lens": "bear",
+  "signal": "neutral",
+  "confidence": 52,
+  "reasoning": "Net-cash balance sheet is not fragile. But concentrated customer demand + 44% vol + priced-for-perfection multiple = turkey problem. Convexity is the buyers', not yours at this price.",
+  "key_metrics": {
+    "net_debt_to_ebitda": -0.36,
+    "earnings_volatility_5y_stddev_pct": null,
+    "margin_stability_5y": "moderate",
+    "insider_ownership_pct": null,
+    "vol_regime": "elevated",
+    "antifragile_score_1_10": 5
+  },
+  "data_gaps": ["Insider ownership % unavailable (FUNDA_API_KEY absent)", "5y earnings-vol stddev distorted by explosive base effect"]
+}

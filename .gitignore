@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# secrets
+.env
+.env.*
+
+# generated reports (keep examples/ committed; ignore your own runs)
+/output/*
+!/output/.gitkeep
+
+# scratch
+*.chk.json
+/tmp/

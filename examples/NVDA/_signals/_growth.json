@@ -1,0 +1,17 @@
+{
+  "specialist": "growth_agent",
+  "signal": "bullish",
+  "confidence": 78,
+  "reasoning": {
+    "historical_growth": {"score": 0.90, "details": {"revenue_5y_cagr_pct": 100.0, "eps_5y_cagr_pct": null, "fcf_5y_cagr_pct": 194.0, "trend": "decelerating"}},
+    "growth_valuation": {"score": 0.70, "details": {"peg_ratio": 0.25, "ps_vs_5y_median": "elevated (19.6x TTM, above historical band)"}},
+    "margin_expansion": {"score": 0.50, "details": {"gross_margin_trajectory": "stable ~74%", "op_margin_trajectory": "slight compression (62.4% FY25 to 60.4% FY26)", "net_margin_trajectory": "stable ~56%"}},
+    "insider_conviction": {"score": 0.50, "details": {"net_flow_90d_shares": null, "net_flow_pct_float": null}},
+    "financial_health": {"score": 1.0, "details": {"debt_to_equity": 0.07, "current_ratio": 3.91}},
+    "final_analysis": {
+      "weighted_score": 0.76,
+      "signal_threshold_logic": "score > 0.6 = bullish, < 0.4 = bearish. 0.40*0.90 + 0.25*0.70 + 0.15*0.50 + 0.10*0.50 + 0.10*1.0 = 0.76 -> bullish. Growth engine is exceptional; the only drags are a full P/S and decelerating (still huge) growth rate."
+    }
+  },
+  "data_gaps": ["Insider conviction scored 0.50 neutral (FUNDA_API_KEY absent, no insider flow)", "EPS 5y CAGR not computed (near-zero FY22 base distorts it)"]
+}

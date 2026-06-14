@@ -1,0 +1,52 @@
+{
+  "specialist": "valuation",
+  "signal": "bearish",
+  "confidence": 55,
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "bearish",
+      "implied_value_per_share": 131,
+      "market_cap_billions": 4969.9,
+      "gap_pct": -36.3,
+      "weight": 0.25,
+      "wacc_pct": 15.4,
+      "bear_case_value_per_share": 96,
+      "base_case_value_per_share": 131,
+      "bull_case_value_per_share": 179
+    },
+    "owner_earnings_analysis": {
+      "signal": "neutral",
+      "implied_value_per_share": 204,
+      "gap_pct": -0.5,
+      "weight": 0.25,
+      "details": "Owner earnings ~$128.2B (NI $120.1B + D&A $14.2B - capex $6.0B). Buffett-style 10% discount, 5y decaying growth (40% to 10%), terminal 4%. The 10% rate (vs the 15.4% real WACC) is what lifts this method to ~$204."
+    },
+    "ev_ebitda_analysis": {
+      "signal": "bullish",
+      "implied_value_per_share": 250,
+      "gap_pct": 21.8,
+      "weight": 0.25,
+      "historical_median_multiple": 33,
+      "peer_median_multiple": 30.0
+    },
+    "residual_income_analysis": {
+      "signal": "bearish",
+      "implied_value_per_share": 68,
+      "gap_pct": -66.9,
+      "weight": 0.25,
+      "book_value_per_share": 6.49,
+      "cost_of_equity_pct": 15.4
+    },
+    "dcf_scenario_analysis": {
+      "bear_case": 96,
+      "base_case": 131,
+      "bull_case": 179,
+      "wacc_used": 15.4,
+      "fcf_periods_analyzed": 10
+    },
+    "aggregate_implied_value_per_share": 163,
+    "aggregate_signal_direction": "bearish",
+    "method_agreement_count": 2
+  },
+  "data_gaps": ["Owner-earnings method uses a 10% discount by Buffett-convention, not the 15.4% real WACC, which is why it diverges sharply from the DCF", "Forward FY27E EBITDA ~$200B is a Street-derived estimate", "Residual income charges the full 15.4% cost of equity against book, producing the most punitive read"]
+}

@@ -1,0 +1,16 @@
+{
+  "persona": "cathie_wood",
+  "lens": "bull",
+  "signal": "bullish",
+  "confidence": 82,
+  "reasoning": "NVIDIA is the purest expression of the single biggest technology platform shift of our lifetimes: the move from general-purpose computing to accelerated, AI-native computing. The disruptive thesis is straightforward. Every layer of the economy, software, drug discovery, robotics, autonomous mobility, is being rebuilt on neural networks, and those networks run on NVIDIA's compute fabric. This isn't a chip company in the old sense. It's the infrastructure provider for machine intelligence, and we think the addressable opportunity reaches multiple trillions of dollars as AI factories get built out across every enterprise and sovereign over the next five years.\n\nThe growth signature confirms it. Revenue went from $61B to $130B to $216B in successive years, and the Street models roughly $390B this fiscal year and over $550B the next. That's still acceleration in absolute dollars at enormous scale, which almost never happens. Forward EPS estimates of nearly $9 this year stepping toward $13 next year tell you earnings power is compounding alongside revenue, not behind it. NVIDIA reinvests aggressively, roughly $18B in R&D and an annual architecture cadence (Blackwell, Rubin, Feynman) that competitors can't match.\n\nOn our five-year framework we don't value this on a trailing multiple. We look at where revenue and free cash flow can be in 2030 if AI compute becomes a standing utility, and the forward EV/sales near 23x compresses dramatically as the denominator grows. The disruptions that matter most, agentic AI, humanoid robotics (the LG partnership announced this month is an early signal), physical-world AI, all consume NVIDIA silicon. The bottleneck risks are real, including the indium-phosphide constraint on optical interconnect, but NVIDIA is funding the supply chain directly with $2B stakes in Coherent and Lumentum. We accept the volatility, a 37% drawdown over the past two years is the price of owning the leader through an exponential build. Long-term horizon, conviction-driven: bullish.",
+  "key_metrics": {
+    "revenue_growth_3y_cagr_pct": 100,
+    "revenue_acceleration_yoy": "decelerating",
+    "estimated_tam_5y_usd_b": 2000,
+    "rnd_as_pct_revenue": 8.6,
+    "forward_ev_sales_5y_out": 5,
+    "disruptive_thesis": "Accelerated computing as the infrastructure layer for all AI: training, inference, robotics, sovereign AI factories"
+  },
+  "data_gaps": ["5y-out revenue is a thesis estimate, not a disclosed figure", "Percentage revenue growth is decelerating off a huge base even as absolute dollar adds remain enormous"]
+}

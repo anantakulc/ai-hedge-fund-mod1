@@ -1,0 +1,16 @@
+{
+  "persona": "mohnish_pabrai",
+  "lens": "bull",
+  "signal": "neutral",
+  "confidence": 55,
+  "reasoning": "I always start with the downside, because heads I win and tails I don't lose much is the whole game. On NVIDIA the downside is what stops me from pounding the table. The free cash flow yield on trailing cash flow is under 1%, and even on last year's record $96.7B it's under 2% against a $5 trillion market cap. That means I'm paying for years of future growth up front, and if hyperscaler capex disappoints or the customers' own silicon takes meaningful share, the downside isn't 20%, it could be 40% or more as the multiple resets. That fails my tails-test. I need the worst case to cost me 20 to 30%, not half.\n\nNow, the business itself passes most of my checklist easily. I can explain it in two sentences: NVIDIA makes the dominant chips and systems that train and run AI, and developers are locked into its software. It's asset-light, no leverage at all (debt to equity 0.07, net cash $51B), and intrinsic value is genuinely rising fast as earnings compound. If this were trading at a 6 to 8% FCF yield I'd back up the truck, because the quality is undeniable and the moat is real.\n\nThe 2x path exists on paper: if forward free cash flow doubles as the Street expects and the multiple merely holds, the stock works. But that requires the growth to show up, and I don't get paid extra for taking that risk at this entry price. This isn't a clone of a classic value setup; it's a great business priced like a great business. My discipline says when downside protection isn't there, the answer is neutral regardless of how good the company is. I'd love to own it cheaper. Neutral.",
+  "key_metrics": {
+    "fcf_yield_pct": 0.93,
+    "net_debt_to_ebitda": -0.36,
+    "business_complexity_score_1_10": 3,
+    "two_x_path_visible": true,
+    "downside_loss_estimate_pct": 40,
+    "clone_of_investor": null
+  },
+  "data_gaps": ["Downside loss is a scenario estimate (multiple reset + FCF disappointment), not observed"]
+}

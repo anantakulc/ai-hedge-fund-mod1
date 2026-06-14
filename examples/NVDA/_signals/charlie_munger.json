@@ -1,0 +1,15 @@
+{
+  "persona": "charlie_munger",
+  "lens": "bull",
+  "signal": "neutral",
+  "confidence": 58,
+  "reasoning": "Wonderful business, lollapalooza of moats. But invert: customer-funded rival silicon plus a priced-in future leaves no margin of safety. Great company, demanding price. Wait.",
+  "key_metrics": {
+    "moat_durability_score_1_10": 8,
+    "mgmt_capital_allocation_grade": "A",
+    "lollapalooza_factors_count": 4,
+    "fcf_yield_pct": 0.93,
+    "inversion_disasters_count": 2
+  },
+  "data_gaps": ["Customer-by-customer in-house silicon roadmaps not quantifiable from filings"]
+}

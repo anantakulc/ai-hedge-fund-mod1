@@ -1,0 +1,18 @@
+{
+  "persona": "ben_graham",
+  "lens": "bear",
+  "signal": "bearish",
+  "confidence": 70,
+  "reasoning": "I shall apply my criteria without regard to the enthusiasm surrounding this enterprise. The Graham Number, the square root of 22.5 times earnings per share times book value per share, computes to approximately $27 using trailing earnings near $4.96 and book value per share of $6.49. The current price of $205 exceeds that figure by a factor of nearly eight. By my central test of valuation, there is no margin of safety whatsoever; the price embeds expectations of growth that my method explicitly refuses to capitalize. A defensive investor following my principles could not purchase this security at this price.\n\nThe net current asset value is similarly unhelpful to the bull. Current assets of $125.6B less total liabilities of $49.5B yields roughly $76B, or about $3.14 per share. The stock trades at sixty-five times its net current asset value. This is the antithesis of the net-net bargains I sought; the buyer here is paying almost entirely for intangible expectation.\n\nOn financial strength, I will give credit where due. The current ratio is 3.91, comfortably above my minimum threshold of 2.0, and debt to equity of 0.07 reflects an exceptionally conservative balance sheet with long-term debt far below net current assets. These are the marks of a financially sound company. The earnings record, however, fails my preference for stability: while there have been no losses, the earnings history is one of explosive recent growth from a small base rather than the long, steady record I favor, and such trajectories are precisely the ones most vulnerable to disappointment. The dividend is nominal and recently initiated, offering no record of consistency.\n\nA superb business, I do not dispute it. But my discipline is not pessimism; it is arithmetic. At eight times the Graham Number and sixty-five times NCAV, the price offers speculation, not investment. Bearish on valuation grounds.",
+  "key_metrics": {
+    "graham_number_per_share": 26.91,
+    "ncav_per_share": 3.14,
+    "price_vs_graham_number_pct": 662,
+    "current_ratio": 3.91,
+    "debt_to_equity": 0.07,
+    "years_positive_earnings_last_10": 10,
+    "consecutive_dividend_years": 13,
+    "margin_of_safety_pct": -662
+  },
+  "data_gaps": ["EPS used is approximate trailing (FY26 net income / shares); diluted EPS field returned 0 in yfinance"]
+}

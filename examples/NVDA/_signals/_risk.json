@@ -1,0 +1,73 @@
+{
+  "specialist": "risk_manager",
+  "structural_concerns": [
+    "Customer concentration: the hyperscaler buyers (Microsoft, Alphabet, Amazon, Meta) are estimated to be 40%+ of data-center revenue and are simultaneously NVDA's largest customers AND the funders of competing in-house silicon (TPU, Trainium, MTIA, Maia). A demand pause or accelerated ASIC migration by even one hits revenue cadence hard. Flagged by Damodaran, Burry, Munger.",
+    "Valuation leaves no margin of safety at a real cost of capital. Damodaran's base DCF ($132, beta 2.0/WACC 15.3%) and the 4-method valuation aggregate ($163) both sit 20-36% below the $205 price; residual income at the real cost of equity implies ~$68. Five of nine bull-lens personas went neutral purely on price. The downside on any multiple reset is large (Burry targets mid-$130s).",
+    "Inventory build: inventory rose 112% YoY to $21.4B (from $10.1B), outpacing even the revenue ramp. A demand softening would convert this to writedowns / margin pressure. Flagged by Burry.",
+    "InP (indium phosphide) optical-interconnect supply gating: China's export-licence regime on InP substrate (no substitute for high-speed optical scale-out; 6-inch wafer +250% to ~$5,000; AXT + Sumitomo ~80% of substrate, AXT producing most of its InP in China) is a real networking-ramp bottleneck for NVDA's optical/co-packaged-photonics roadmap. Mitigated: NVDA invested $2B each into Coherent and Lumentum in March to secure supply. Exposure MEDIUM, headwind not thesis-breaking.",
+    "Elevated volatility regime: 30-day annualized vol 43.7% vs 252-day 34.9% (expanding); 2-year max drawdown 36.9%. Beta 2.20 means the position carries roughly twice market risk and limited diversification benefit against an S&P-heavy book."
+  ],
+  "key_risks": [
+    {
+      "title": "Hyperscaler capex air-pocket",
+      "description": "AI infrastructure spend is concentrated in a handful of buyers; a 15-20%+ capex pullback in any single year would deflate the forward revenue path the valuation depends on and reset the multiple.",
+      "severity": "high",
+      "likelihood": "medium",
+      "source": "michael_burry, aswath_damodaran, stanley_druckenmiller"
+    },
+    {
+      "title": "Customer in-house silicon substitution",
+      "description": "The largest customers are funding custom ASICs that target inference share; faster-than-expected migration erodes NVDA's volume and pricing, especially as gross margins above 70% incentivize the switch.",
+      "severity": "high",
+      "likelihood": "medium",
+      "source": "aswath_damodaran, charlie_munger, michael_burry"
+    },
+    {
+      "title": "Valuation / multiple compression",
+      "description": "At a real (beta-2.0) cost of capital the base intrinsic value is ~$132, roughly 36% below price; the equity is priced for a near-flawless decade and any disappointment compresses the multiple sharply.",
+      "severity": "high",
+      "likelihood": "medium",
+      "source": "ben_graham, aswath_damodaran, valuation, mohnish_pabrai"
+    },
+    {
+      "title": "AMD competitive share gain",
+      "description": "AMD's MI-series gaining double-digit training/inference share faster than modeled would pressure NVDA's volume growth and pricing power in the back half of the forecast window.",
+      "severity": "medium",
+      "likelihood": "medium",
+      "source": "michael_burry, aswath_damodaran"
+    },
+    {
+      "title": "InP optical-interconnect supply gating (regulatory)",
+      "description": "China's InP export controls throttle the optical substrate needed for AI scale-out networking (no near-term substitute, wafer prices +250%). Real near-term ramp risk for co-packaged optics, mitigated by NVDA's $2B stakes in Coherent and Lumentum and substitution over time.",
+      "severity": "medium",
+      "likelihood": "medium",
+      "source": "risk_manager (InP shared context), cathie_wood, aswath_damodaran"
+    },
+    {
+      "title": "Inventory writedown risk",
+      "description": "Inventory +112% YoY to $21.4B ahead of the demand curve; a softening in orders converts the build into writedowns and a margin hit.",
+      "severity": "medium",
+      "likelihood": "low",
+      "source": "michael_burry"
+    },
+    {
+      "title": "Elevated volatility / drawdown",
+      "description": "Beta 2.20, 30d annualized vol ~44%, 2y max drawdown ~37%. High covariance with an already tech-heavy market limits diversification and forces a smaller prudent position size.",
+      "severity": "medium",
+      "likelihood": "high",
+      "source": "nassim_taleb, technicals"
+    }
+  ],
+  "volatility_metrics": {
+    "annualized_volatility_pct": 43.7,
+    "max_drawdown_3y_pct": -36.9,
+    "correlation_to_spy": 0.7,
+    "beta_5y": 2.2,
+    "vol_tier": "high"
+  },
+  "position_limit_pct": 3.0,
+  "position_limit_reasoning": "Volatility tier high (30d annualized vol 43.7%, in the 40-60% band): base max 3%. Adjustments: beta 2.20 and meaningful SPY correlation argue for limited diversification benefit (would deduct 1pp toward 2%), but the net-cash, no-leverage balance sheet removes any solvency-driven cut, and the 2y max drawdown of 37% is below the 50% penalty threshold. Net: hold at the 3% tier anchor. Final: 3.0%.",
+  "consensus_bearish_count": 3,
+  "consensus_bullish_count": 5,
+  "data_gaps": ["SPY correlation estimated (not freshly computed in this run); beta 2.20 from yfinance", "Insider flow unavailable (FUNDA_API_KEY absent) so insider-aligned risk signals not incorporated", "Customer-concentration % is an estimate; segment-customer split not disclosed via yfinance"]
+}

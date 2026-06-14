@@ -1,0 +1,620 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "listings": "NASDAQ",
+  "sector": "Technology - Semiconductors",
+  "date": "2026-06-14",
+  "engine": "srqt2/ai-hedge-fund (translated)",
+  "currency": "USD",
+  "recommendation": {
+    "action": "HOLD",
+    "tone": "neutral",
+    "current_price": 205.19,
+    "target_12m": 191.57,
+    "upside_pct": -6.6,
+    "rationale": "Confidence-weighted analyst consensus fair value $192 (-6.6% vs $205); HOLD. The constructive lens (EV/EBITDA $250, Relative $250) sits above today's price, the valuation-cautious lens (Residual Income $68, Specialist DCF $131) below; the confidence-weighted center lands below the market price.",
+    "next_earnings": "2026-08-27 (Q2 FY27)"
+  },
+  "snapshot": [
+    {
+      "label": "Last close",
+      "value": "$205.19"
+    },
+    {
+      "label": "52-week range",
+      "value": "$141.78 - $235.47"
+    },
+    {
+      "label": "Drawdown from high",
+      "value": "-12.9%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+43.9%"
+    },
+    {
+      "label": "YTD return",
+      "value": "+8.8%"
+    },
+    {
+      "label": "Market cap",
+      "value": "$4.97T"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$4.92T"
+    },
+    {
+      "label": "Net cash",
+      "value": "+$51.5B"
+    },
+    {
+      "label": "FY26 revenue",
+      "value": "$215.9B (+65% YoY)"
+    },
+    {
+      "label": "FY26 EBITDA / margin",
+      "value": "$144.6B / 67%"
+    },
+    {
+      "label": "FY26 FCF",
+      "value": "$96.7B"
+    },
+    {
+      "label": "Forward EPS (FY27E)",
+      "value": "~$8.96"
+    },
+    {
+      "label": "Forward P/E",
+      "value": "16.1x"
+    },
+    {
+      "label": "Trailing P/E",
+      "value": "31.4x"
+    },
+    {
+      "label": "EV / EBITDA (TTM)",
+      "value": "29.8x"
+    },
+    {
+      "label": "EV / EBIT (FY26)",
+      "value": "37.7x"
+    },
+    {
+      "label": "Beta (regression)",
+      "value": "2.20"
+    },
+    {
+      "label": "ADTV (30d, $)",
+      "value": "$36.0B"
+    },
+    {
+      "label": "30d realized vol",
+      "value": "43.7% ann."
+    },
+    {
+      "label": "Analyst consensus",
+      "value": "Strong Buy (59 analysts)"
+    },
+    {
+      "label": "Mean / median PT",
+      "value": "$298.93 / $288.00"
+    },
+    {
+      "label": "Implied PT upside (Street)",
+      "value": "+45.7%"
+    },
+    {
+      "label": "ROE / ROIC (FY26)",
+      "value": "76% / 67%"
+    },
+    {
+      "label": "FCF yield (TTM)",
+      "value": "0.93%"
+    }
+  ],
+  "thesis": [
+    "The panel splits 4 bullish / 6 neutral / 3 bearish, and the split is almost entirely about price, not quality. Nobody disputes the franchise: ROIC ~67%, ROE 76%, operating margin 60%, net cash $51.5B, revenue compounding ~100% a year for three years. The disagreement is what it's worth.",
+    "Run the DCF at a cost of capital that matches NVDA's actual 2.2 beta and the base case lands near $132, roughly 36% below the $205 price. That's the engine's core finding: at an honest 15.3% WACC the market already discounts a near-flawless decade. Five bull-lens investors (Buffett, Munger, Pabrai, Druckenmiller, Jhunjhunwala) went neutral for exactly this reason.",
+    "The cross-check keeps it from being a short. Semis trade on EV/EBITDA, and 30x forward gets you to ~$250, so the relative lens disagrees with the perpetuity DCF. Blending the two leaves a HOLD with downside skew: own the business, but the price needs the growth to keep overshooting, and the margin of safety isn't there."
+  ],
+  "bear_paragraph": "Strip out the awe and price the cash flows honestly. NVDA trades at a sub-1% trailing free-cash-flow yield, 37.7x EV/EBIT, and 23x EV/sales, which are perpetuity-compounder multiples pinned on a hardware franchise at the crest of a capex cycle. Discount the cash flows at a rate that reflects the stock's real 2.2 beta, a 15.3% WACC, and the base case is about $132; the residual-income model, which charges that same cost of equity against a $157B book, implies closer to $68. Graham's arithmetic is blunter still: at $205 the stock sits at roughly eight times its Graham Number and sixty-five times net current asset value, no margin of safety by any conservative measure. The structural worry underneath the multiple is customer concentration that cuts both ways. The hyperscalers funding 40%-plus of data-center revenue are the same firms building TPUs, Trainium, MTIA, and Maia to replace NVDA silicon, and gross margins above 70% are precisely the incentive to switch. Inventory jumped 112% year on year to $21.4B, ahead of the demand curve, so a soft quarter converts to writedowns. Add an indium-phosphide supply gate on the optical interconnect the next networking ramp depends on (mitigated by the $2B stakes in Coherent and Lumentum, but real), 44% annualized volatility, and a 37% drawdown already on the two-year tape. None of this says the business is bad. It says the price assumes everything goes right.",
+  "peers": [
+    {
+      "ticker": "NVDA",
+      "pe_ntm": 16.1,
+      "ev_ebitda": 29.8,
+      "rev_growth_ttm": 85.2,
+      "ytd": 8.8,
+      "y1": 44.7,
+      "highlight": true
+    },
+    {
+      "ticker": "AMD",
+      "pe_ntm": 39.0,
+      "ev_ebitda": 111.1,
+      "rev_growth_ttm": 37.8,
+      "ytd": 128.9,
+      "y1": 340.4
+    },
+    {
+      "ticker": "AVGO",
+      "pe_ntm": 19.7,
+      "ev_ebitda": 44.3,
+      "rev_growth_ttm": 47.9,
+      "ytd": 10.1,
+      "y1": 54.9
+    },
+    {
+      "ticker": "MRVL",
+      "pe_ntm": 45.3,
+      "ev_ebitda": 90.8,
+      "rev_growth_ttm": 27.6,
+      "ytd": 213.3,
+      "y1": 317.4
+    },
+    {
+      "ticker": "TSM",
+      "pe_ntm": 21.7,
+      "ev_ebitda": 5.4,
+      "rev_growth_ttm": 35.1,
+      "ytd": 33.3,
+      "y1": null
+    }
+  ],
+  "peers_read": "NVDA is the cheapest name in its own cohort on forward P/E (16.1x) despite the fastest revenue growth (+85%), which is the bulls' single best argument. The catch is that the forward multiple is low only because earnings are expected to balloon, so it embeds the AI ramp continuing. On EV/EBITDA NVDA's 29.8x sits below AMD and MRVL, but those carry triple-digit multiples on thin near-term profit. The tape tells the rotation story: AMD +129% YTD and MRVL +213% YTD have run far ahead of NVDA's +8.8%, money chasing the higher-beta second-derivative plays while the leader consolidates.",
+  "bull_catalysts": [
+    {
+      "id": 1,
+      "title": "Forward PEG near 0.25 on 40%+ earnings growth (Lynch)",
+      "body": "Forward P/E of about 16 against blended forward EPS growth in the 40-65% range puts the PEG between 0.2 and 0.3. Lynch's signature metric flashes cheap: a PEG under 1.0 is attractive, and under 0.3 on a business growing earnings this fast is rare. The whole question is whether the forward 'E' holds; if it does, the stock is too cheap on its own math."
+    },
+    {
+      "id": 2,
+      "title": "Revenue from $27B to $216B in three years, broadening beyond GPUs (Fisher)",
+      "body": "Three-year revenue CAGR near 100%, and the growth is broad-based: the data-center platform now spans GPUs, networking (Spectrum-X, NVLink), and a growing software and systems layer. Fisher prizes growth that comes from several reinforcing places rather than one SKU, because it tends to persist. Operating margin has held a 54-62% band through the ramp."
+    },
+    {
+      "id": 3,
+      "title": "Annual architecture cadence funded by $18.5B R&D (Fisher, Cathie)",
+      "body": "Hopper to Blackwell to Rubin to Feynman, a new architecture roughly every year, the most aggressive pipeline in semis. R&D was $18.5B last year (8.6% of revenue, the percentage low only because revenue exploded; dollars nearly doubled). This reinvestment cadence is what keeps the technology lead widening and competitors a step behind."
+    },
+    {
+      "id": 4,
+      "title": "Accelerated computing as the infrastructure layer for all AI (Cathie)",
+      "body": "The disruptive thesis: every layer of the economy, software, drug discovery, robotics, autonomy, is being rebuilt on neural networks that run on NVDA's compute fabric. Cathie sizes the five-year addressable opportunity in the trillions as AI factories get built across enterprises and sovereigns. The June LG humanoid-robot and data-center partnership is an early physical-AI signal."
+    },
+    {
+      "id": 5,
+      "title": "Pristine, capital-light balance sheet: $51.5B net cash, D/E 0.07 (Ackman, Jhunjhunwala)",
+      "body": "Net cash of $51.5B against trivial debt, debt-to-equity 0.07, current ratio 3.9. There's no balance-sheet landmine and no leverage engineering. Ackman frames it as a simple, predictable, FCF-generative compounder; Jhunjhunwala notes ROE has run 69-92% over three years. The quality bar is met emphatically."
+    },
+    {
+      "id": 6,
+      "title": "Free cash flow $96.7B, up from $61B, fully self-funding buybacks (Ackman)",
+      "body": "FY26 free cash flow of $96.7B, up from $60.9B the prior year. The company bought back $40B of stock last year entirely from internal cash. If forward FCF roughly doubles as the Street models, EV/FCF normalizes toward 30x and the multiple looks reasonable for the quality. Ackman would own it as a quality compounder and add on volatility."
+    },
+    {
+      "id": 7,
+      "title": "CUDA software lock-in plus systems integration is a widening moat (Munger, Ackman)",
+      "body": "The moat isn't just the silicon: it's the CUDA developer ecosystem layered on the best accelerated chips, reinforced by full-system integration and networking. Switching costs for the developer base and the hyperscaler install base are enormous. Munger scores moat durability 8/10 and counts a lollapalooza of reinforcing tailwinds: scale, software, brand, and an annual cadence competitors can't match."
+    },
+    {
+      "id": 8,
+      "title": "Proactive supply-chain de-risking: $2B each into Coherent and Lumentum (Cathie, risk)",
+      "body": "NVDA invested $2B each into Coherent and Lumentum in March to secure photonics supply ahead of the indium-phosphide bottleneck on optical interconnect. Rather than wait for the supply gate to bite, management is funding the optical supply chain directly. This converts a potential networking-ramp risk into a managed one and locks in sticky, long-qualification-cycle suppliers."
+    },
+    {
+      "id": 9,
+      "title": "Street still models +81% revenue this fiscal year, +41% next (Druckenmiller, Cathie)",
+      "body": "Consensus has FY27 revenue near $391B (+81%) and FY28 near $551B (+41%), with 52-55 analysts and a Strong Buy consensus, mean target $298.93 (+46% to spot). The order book for Blackwell and GB300 is visible and Rubin commitments are in hand. Druckenmiller flags the catalyst calendar (August print, Rubin ramp, sovereign AI) as dense and constructive."
+    },
+    {
+      "id": 10,
+      "title": "Owner earnings ~$128B and a Buffett-rate DCF near fair value (valuation specialist)",
+      "body": "Owner earnings (net income plus D&A less capex) ran about $128B last year. Discounted at Buffett's conventional 10% rate rather than the punitive real-beta WACC, the owner-earnings model lands near $204, essentially at the current price. The bull read is that NVDA's true risk, given net cash and a dominant franchise, is closer to a market multiple than its raw 2.2 beta implies."
+    }
+  ],
+  "bear_breakers": [
+    {
+      "id": 1,
+      "title": "DCF at a real 15.3% WACC says ~$132, about 36% below price (Damodaran)",
+      "body": "Cost of equity is rf + beta x ERP. With the real regression beta near 2.2 (Damodaran uses 2.0, refusing to soften it to a sell-side 1.3), cost of equity is 15.4% and WACC about 15.3%. Even anchoring near-term revenue to Street consensus and fading to a 4% terminal, the base intrinsic value is about $132. The price already discounts a near-flawless decade; the honest cost of capital is the entire gap versus a softer model."
+    },
+    {
+      "id": 2,
+      "title": "No margin of safety by any conservative measure (Graham, Jhunjhunwala)",
+      "body": "Graham's arithmetic: the stock trades at roughly eight times its Graham Number (~$27) and sixty-five times net current asset value (~$3.14/share). Jhunjhunwala requires a 30% discount to intrinsic value and finds the margin of safety negative. The residual-income model, charging the real cost of equity against book, implies closer to $68. By the conservative toolkit this is speculation on price, not investment."
+    },
+    {
+      "id": 3,
+      "title": "Customer concentration that funds its own replacement (Damodaran, Munger, Burry)",
+      "body": "The hyperscalers estimated at 40%-plus of data-center revenue, Microsoft, Alphabet, Amazon, Meta, are the same firms building TPU, Trainium, MTIA, and Maia to displace NVDA silicon. Gross margins above 70% are precisely the incentive to switch. A demand pause or accelerated ASIC migration by even one large customer hits the revenue cadence the valuation depends on."
+    },
+    {
+      "id": 4,
+      "title": "Sub-1% FCF yield, 37.7x EV/EBIT at a cycle crest (Burry)",
+      "body": "Burry, terse: FCF yield 0.9% trailing, EV/EBIT 37.7, EV/sales 22.8. Perpetuity prices on a hardware cycle at its peak. Revenue grew off a base that didn't exist three years ago, which is exactly when extrapolation gets dangerous. Downside to the mid-$130s on any capex air-pocket. The balance sheet isn't the risk; the multiple and the cycle are."
+    },
+    {
+      "id": 5,
+      "title": "Inventory up 112% YoY to $21.4B, ahead of the demand curve (Burry)",
+      "body": "Inventory more than doubled year on year to $21.4B, outpacing even the revenue ramp. If orders soften, that build converts to writedowns and a margin hit. It's the kind of working-capital tell that precedes a negative revision when a hardware cycle inflects, and it sits underneath the priced-for-perfection multiple."
+    },
+    {
+      "id": 6,
+      "title": "Indium-phosphide gate on optical interconnect (risk, regulatory)",
+      "body": "China's export-licence regime on indium phosphide throttles the optical substrate that AI scale-out networking needs, with no near-term substitute and 6-inch wafer prices up 250% to about $5,000. AXT and Sumitomo hold ~80% of substrate and AXT makes most of its InP in China. NVDA's co-packaged-photonics roadmap is exposed. Mitigated by the $2B Coherent and Lumentum stakes, but a real near-term ramp risk, exposure MEDIUM."
+    },
+    {
+      "id": 7,
+      "title": "Momentum has stalled while the cohort runs (Druckenmiller, technicals)",
+      "body": "Down 9% over the past month, below the 21-day and 50-day averages, RSI in the low 40s, up only 12% over six months and 8.8% YTD, while AMD is up 129% and MRVL 213% YTD. When the obvious leader lags the higher-beta names in its own group, money is rotating into the second-derivative plays and near-term sentiment has cooled. Druckenmiller's asymmetric setup is only about 1.5:1, short of his 3:1 bar."
+    },
+    {
+      "id": 8,
+      "title": "Elevated volatility and a 37% drawdown already on the tape (Taleb, risk)",
+      "body": "Thirty-day annualized volatility of 44% against a 252-day 35%, an expanding regime, and a two-year max drawdown of 37%. Taleb's turkey-problem framing: concentrated demand plus a priced-for-perfection multiple means the convexity belongs to the buyers at this price, not the holder. Beta 2.2 carries roughly twice market risk with limited diversification against a tech-heavy book; the risk manager caps the prudent position at 3%."
+    }
+  ],
+  "industry_type": "non-bank",
+  "dcf_scenarios": [
+    {
+      "scenario": "Bear",
+      "wacc": "16.4%",
+      "terminal_g": "3.0%",
+      "fcf_path": "Cycle peaks, custom silicon migration accelerates, gross margin compresses toward 40% terminal, growth fades hard after ",
+      "implied_px": 65.15
+    },
+    {
+      "scenario": "Base",
+      "wacc": "15.3%",
+      "terminal_g": "4.0%",
+      "fcf_path": "Central case. AI capex extends, Rubin ramps on plan, margins ease gracefully, custom silicon takes some inference share ",
+      "implied_px": 131.89
+    },
+    {
+      "scenario": "Bull",
+      "wacc": "13.4%",
+      "terminal_g": "4.2%",
+      "fcf_path": "AI capex extends another leg, sovereign AI prints meaningfully, Rubin overshoots customer commitments, margins hold.",
+      "implied_px": 242.83
+    }
+  ],
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "prob": 0.15,
+      "outcome_range": "$240-300",
+      "description": "Beta proves closer to 1.65 than 2.2, Rubin overshoots, sovereign AI prints $80B+, gross margin re-expands on HBM4. The relative multiple is the right lens and the stock re-rates toward the Street's $299."
+    },
+    {
+      "label": "Base",
+      "prob": 0.45,
+      "outcome_range": "$130-160",
+      "description": "Street near-term revenue, then a disciplined fade at an honest cost of capital. Intrinsic value sits below price; the stock drifts as the multiple compresses toward what the cash flows support. The blended target near $150 is the center of gravity."
+    },
+    {
+      "label": "Bear",
+      "prob": 0.4,
+      "outcome_range": "$65-135",
+      "description": "A hyperscaler capex air-pocket or faster custom-silicon migration triggers a negative revision and a multiple reset. Burry's mid-$130s downside, or worse toward the residual-income $68 if the cycle truly rolls. The bear-plus-neutral cohort weight makes this a live tail."
+    }
+  ],
+  "recommendation_table": [
+    {
+      "action": "Direction",
+      "detail": "HOLD with negative bias. Weighted persona vote 0.50 (HOLD); valuation pulls the blended target ~27% below spot."
+    },
+    {
+      "action": "12m target",
+      "detail": "~$150 (confidence-weighted: Bear 25% x $65 + Base 45% x $132 + Bull 15% x $243 + EV/EBITDA 15% x $250)."
+    },
+    {
+      "action": "Existing longs",
+      "detail": "Hold the quality, but trim into strength. The franchise is intact; the price needs the AI ramp to keep overshooting to be justified."
+    },
+    {
+      "action": "New money",
+      "detail": "Wait for a better entry. Five bull-lens investors went neutral purely on price; a pullback toward the low $150s restores some margin of safety."
+    },
+    {
+      "action": "Hedge",
+      "detail": "Given 44% volatility and beta 2.2, size any long modestly and consider collars through the August print."
+    },
+    {
+      "action": "Position sizing",
+      "detail": "Risk manager caps at 3.0% (high-vol tier). Beta 2.2 and high market correlation limit diversification benefit."
+    }
+  ],
+  "catalysts_to_watch": [
+    "Q2 FY27 earnings 2026-08-27: data-center revenue trajectory and the FY28 guide",
+    "Rubin platform ramp timing and customer commitment disclosures",
+    "Sovereign AI order flow (target $50-80B contribution signposts)",
+    "Hyperscaler capex guidance from MSFT/GOOGL/AMZN/META quarterly prints",
+    "Custom-silicon share data points (Trainium/TPU/MTIA/Maia deployment scale)",
+    "Indium-phosphide licence scope changes and Coherent/Lumentum capacity ramp",
+    "Gross margin trend (HBM4 yields vs competitive pricing pressure)"
+  ],
+  "data_gaps": [
+    "FUNDA_API_KEY absent: no insider-trade flow, no 10-K segment/customer splits, no transcript reads. Burry/Taleb/growth insider components degraded to neutral.",
+    "ADANOS_API_KEY absent: no cross-source social sentiment (Reddit/X/Polymarket). Sentiment specialists ran news-only on ~10 yfinance articles, thin sample.",
+    "Customer-concentration % (hyperscaler share of DC revenue) is an estimate; not disclosed via yfinance.",
+    "Diluted EPS field returned 0 in yfinance; trailing EPS approximated from FY26 net income / shares.",
+    "InP licence quota/scope figures and post-2026-06-11 developments not machine-fetched (source paywalled); magnitudes analyst-inferred from the supplied article."
+  ],
+  "business_overview": {
+    "summary": "NVIDIA designs accelerated-computing platforms, the GPUs, networking, and full systems that train and run artificial intelligence. It sits at the center of the AI infrastructure build-out, selling to cloud hyperscalers, sovereigns, enterprises, and consumer gaming. Data center is now the overwhelming majority of revenue, which reached $215.9B in fiscal 2026, up 65% year on year, on operating margins above 60%.",
+    "business_model": "NVDA is fabless: it designs the silicon and outsources manufacturing (primarily to TSMC), keeping capex light at roughly 3% of revenue. Value is captured through hardware plus a software ecosystem (CUDA) that locks in developers, plus networking and systems integration that raise dollar content per AI deployment. The model throws off enormous free cash flow ($96.7B in FY26) that funds aggressive R&D and buybacks.",
+    "segments": [
+      {
+        "name": "Data Center",
+        "revenue_share_pct": 88,
+        "growth_yoy_pct": 72,
+        "margin_pct": null,
+        "description": "GPUs, networking (Spectrum-X, NVLink, InfiniBand), and AI systems for training and inference. The growth engine; the overwhelming majority of revenue."
+      },
+      {
+        "name": "Gaming",
+        "revenue_share_pct": 8,
+        "growth_yoy_pct": 12,
+        "margin_pct": null,
+        "description": "GeForce RTX GPUs for PC gaming and creators. The legacy core, now a minority of the mix."
+      },
+      {
+        "name": "Professional Visualization",
+        "revenue_share_pct": 2,
+        "growth_yoy_pct": 15,
+        "margin_pct": null,
+        "description": "RTX workstation GPUs and Omniverse for design, simulation, and digital twins."
+      },
+      {
+        "name": "Automotive & Robotics",
+        "revenue_share_pct": 2,
+        "growth_yoy_pct": 40,
+        "margin_pct": null,
+        "description": "DRIVE and Jetson platforms for autonomy and embedded/edge AI; small today but a long-runway physical-AI option."
+      }
+    ],
+    "customers": [
+      {
+        "name": "Hyperscale cloud (MSFT, Alphabet, Amazon, Meta)",
+        "revenue_share_pct": null,
+        "importance": "Estimated 40%+ of data-center revenue; also the funders of competing in-house silicon (double-edged)."
+      },
+      {
+        "name": "Sovereign AI programs",
+        "revenue_share_pct": null,
+        "importance": "Government-funded national AI compute; a growing, less price-sensitive demand pool."
+      },
+      {
+        "name": "Enterprises and neoclouds (CoreWeave, etc.)",
+        "revenue_share_pct": null,
+        "importance": "Broadening base beyond the top hyperscalers; supports demand durability."
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "Accelerated computing for AI is the fastest-growing segment of semiconductors, gated by hyperscaler and sovereign capex cycles. NVDA holds the dominant share of AI training silicon; the contested frontier is inference, where customer ASICs and AMD are pushing in. Supply-chain bottlenecks (HBM, advanced packaging, indium-phosphide optical substrate) currently constrain industry output more than demand.",
+    "tam_usd_bn": 2000,
+    "moat": "The moat is the CUDA software ecosystem layered on the best accelerated silicon, reinforced by full-system integration, networking, and an annual architecture cadence. Switching costs for the developer base and the hyperscaler install base are high. The vulnerability is that NVDA's largest customers have the scale and motive to build alternatives, so the moat is wide today but actively under siege at the inference edge.",
+    "competitors": [
+      {
+        "name": "AMD",
+        "description": "MI-series GPUs targeting training and inference; the most direct merchant-silicon challenger, gaining share off a small base."
+      },
+      {
+        "name": "Hyperscaler in-house ASICs",
+        "description": "Google TPU, Amazon Trainium/Inferentia, Meta MTIA, Microsoft Maia, customer silicon aimed at displacing NVDA for internal inference workloads."
+      },
+      {
+        "name": "Broadcom / Marvell",
+        "description": "Custom-silicon and networking enablers that help hyperscalers build their own accelerators and AI networking."
+      },
+      {
+        "name": "TSMC",
+        "description": "Not a competitor but the critical foundry dependency; also the supply chokepoint shared across the whole AI-silicon cohort."
+      }
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY23",
+      "revenue_usd_b": 26.974,
+      "revenue_growth_yoy_pct": 0.2,
+      "gross_margin_pct": 56.9,
+      "ebitda_usd_m": 5986,
+      "ebitda_margin_pct": 22.2,
+      "net_income_usd_m": 4368,
+      "fcf_usd_m": 3808,
+      "eps": 0.17
+    },
+    {
+      "fy": "FY24",
+      "revenue_usd_b": 60.922,
+      "revenue_growth_yoy_pct": 125.9,
+      "gross_margin_pct": 72.7,
+      "ebitda_usd_m": 35583,
+      "ebitda_margin_pct": 58.4,
+      "net_income_usd_m": 29760,
+      "fcf_usd_m": 27021,
+      "eps": 1.21
+    },
+    {
+      "fy": "FY25",
+      "revenue_usd_b": 130.497,
+      "revenue_growth_yoy_pct": 114.2,
+      "gross_margin_pct": 75.0,
+      "ebitda_usd_m": 86137,
+      "ebitda_margin_pct": 66.0,
+      "net_income_usd_m": 72880,
+      "fcf_usd_m": 60853,
+      "eps": 2.97
+    },
+    {
+      "fy": "FY26",
+      "revenue_usd_b": 215.938,
+      "revenue_growth_yoy_pct": 65.5,
+      "gross_margin_pct": 71.1,
+      "ebitda_usd_m": 144552,
+      "ebitda_margin_pct": 66.9,
+      "net_income_usd_m": 120067,
+      "fcf_usd_m": 96676,
+      "eps": 4.96
+    }
+  ],
+  "management": {
+    "ceo": "Jensen Huang, co-founder and CEO since 1993",
+    "cfo": "Colette Kress, CFO since 2013",
+    "insider_ownership_pct": null,
+    "capital_allocation_history": "Conservative and shareholder-friendly, funded entirely from internal cash. Repurchased about $40B of stock in FY26 (up from $33.7B in FY25) and pays a nominal dividend (~$1B/year). No leverage engineering; the balance sheet carries $51.5B net cash. Founder-led for three decades with a record of early, contrarian bets (CUDA, accelerated computing) that compounded.",
+    "recent_insider_activity": []
+  },
+  "key_risks": [
+    {
+      "category": "customer",
+      "title": "Hyperscaler capex air-pocket",
+      "description": "AI infrastructure spend is concentrated in a handful of buyers. A 15-20%+ capex pullback in any single year would deflate the forward revenue path the valuation depends on and trigger a multiple reset. Severity high, likelihood medium."
+    },
+    {
+      "category": "customer",
+      "title": "Customer in-house silicon substitution",
+      "description": "The largest customers fund custom ASICs (TPU, Trainium, MTIA, Maia) targeting inference. Faster-than-expected migration erodes NVDA volume and pricing, and 70%+ gross margins are the incentive to switch. Severity high, likelihood medium."
+    },
+    {
+      "category": "structural",
+      "title": "Valuation / multiple compression",
+      "description": "At a real beta-2.0 cost of capital the base intrinsic value is ~$132, ~36% below price. The equity is priced for a near-flawless decade; any disappointment compresses the multiple sharply. Severity high, likelihood medium."
+    },
+    {
+      "category": "cyclical",
+      "title": "AMD competitive share gain",
+      "description": "AMD's MI-series taking double-digit training/inference share faster than modeled would pressure NVDA volume growth and pricing in the back half of the forecast window. Severity medium, likelihood medium."
+    },
+    {
+      "category": "regulatory",
+      "title": "Indium-phosphide optical-interconnect supply gating",
+      "description": "China's InP export controls throttle the optical substrate needed for AI scale-out networking (no near-term substitute, wafer +250%). Real near-term ramp risk for co-packaged optics; mitigated by NVDA's $2B stakes in Coherent and Lumentum and substitution over time. Exposure MEDIUM. Severity medium, likelihood medium."
+    },
+    {
+      "category": "execution",
+      "title": "Inventory writedown risk",
+      "description": "Inventory +112% YoY to $21.4B ahead of the demand curve. A softening in orders converts the build into writedowns and a margin hit. Severity medium, likelihood low."
+    },
+    {
+      "category": "macro",
+      "title": "Elevated volatility and drawdown",
+      "description": "Beta 2.20, 30d annualized vol ~44%, 2y max drawdown ~37%. High covariance with a tech-heavy market limits diversification and forces a smaller prudent position size. Severity medium, likelihood high."
+    }
+  ],
+  "social_sentiment": {
+    "reddit_mentions": null,
+    "x_mentions": null,
+    "bullish_pct": null,
+    "summary": "Cross-source sentiment unavailable this run (ADANOS_API_KEY absent). yfinance returned ~10 news items, mostly generic AI-trade or off-ticker; the one NVDA-specific positive was the LG humanoid-robot and data-center partnership. Treated as thin, mildly positive, low confidence."
+  },
+  "ahf_panel": {
+    "decision_rule": "Weighted persona vote: >0.55 BUY, <0.45 SELL, else HOLD. The vote is one input; the valuation football field and the risk_manager position cap discipline the final call.",
+    "consensus": {
+      "bullish": 4,
+      "neutral": 6,
+      "bearish": 3,
+      "top_bull_persona": "cathie_wood",
+      "top_bull_reason": "Accelerated computing is the infrastructure layer for all AI; trillion-dollar 5y TAM, leader through an exponential build.",
+      "top_bear_persona": "aswath_damodaran",
+      "top_bear_reason": "At the real 2.2-beta WACC of 15.3%, base intrinsic value is ~$132, about 36% below price."
+    },
+    "method_choice": {
+      "primary": "DCF (FCFF, Damodaran)",
+      "rationale": "Matches GER + the real ai-hedge-fund engine; the gap vs GER is the assumptions, specifically the real beta (2.0 vs GER's 1.3) driving a 15.3% WACC instead of 9.5%. No SOTP; the difference lives entirely in the cost of capital."
+    },
+    "recommendation_derivation": "4 constructive / 6 neutral / 3 cautious. The 12m target is the confidence-weighted consensus of every analyst's fair value, not a vote and not any single model ($192); it sits below the $205 price, so the call is HOLD. The strict harsh-WACC FCFF DCF ($132) is one bar on the field and is carried as the headline valuation risk.",
+    "consensus_target": 191.57,
+    "consensus_upside_pct": -6.6,
+    "consensus_method": "Confidence-weighted mean of each analyst's fair value (stated where given, else imputed from signal vs price, max +/-20% at full conviction). No fixed per-analyst weights; confidence is the weight. No vote threshold.",
+    "football_field": [
+      {
+        "label": "Ben Graham - graham number",
+        "source": "ben_graham",
+        "kind": "graham",
+        "low": 26.91,
+        "base": 26.91,
+        "high": 26.91
+      },
+      {
+        "label": "Residual Income",
+        "source": "valuation_specialist",
+        "kind": "residual_income",
+        "low": 68,
+        "base": 68,
+        "high": 68
+      },
+      {
+        "label": "FCFF DCF (Damodaran)",
+        "source": "aswath_damodaran",
+        "kind": "dcf",
+        "low": 65.15,
+        "base": 131.89,
+        "high": 242.83,
+        "note": "One analyst's rigorous DCF. The headline target is the panel consensus, not this bar."
+      },
+      {
+        "label": "Michael Burry - downside target",
+        "source": "michael_burry",
+        "kind": "persona",
+        "low": 135.0,
+        "base": 135.0,
+        "high": 135.0
+      },
+      {
+        "label": "Warren Buffett - estimated intrinsic value",
+        "source": "warren_buffett",
+        "kind": "persona",
+        "low": 190.0,
+        "base": 190.0,
+        "high": 190.0
+      },
+      {
+        "label": "Rakesh Jhunjhunwala - estimated intrinsic value",
+        "source": "rakesh_jhunjhunwala",
+        "kind": "persona",
+        "low": 195.0,
+        "base": 195.0,
+        "high": 195.0
+      },
+      {
+        "label": "Owner Earnings",
+        "source": "valuation_specialist",
+        "kind": "owner_earnings",
+        "low": 204,
+        "base": 204,
+        "high": 204
+      },
+      {
+        "label": "Bill Ackman - estimated intrinsic value",
+        "source": "bill_ackman",
+        "kind": "persona",
+        "low": 215.0,
+        "base": 215.0,
+        "high": 215.0
+      },
+      {
+        "label": "Peer EV/EBITDA (AI-semi composite)",
+        "source": "relative",
+        "kind": "relative",
+        "low": 249.85,
+        "base": 249.85,
+        "high": 249.85
+      },
+      {
+        "label": "EV/EBITDA (trailing)",
+        "source": "valuation_specialist",
+        "kind": "ev_ebitda",
+        "low": 250,
+        "base": 250,
+        "high": 250
+      }
+    ],
+    "dcf_blended_reference": 149.54
+  }
+}

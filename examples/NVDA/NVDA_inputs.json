@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0",
+  "ticker": "NVDA",
+  "currency": "USD",
+  "current_price": 205.19,
+  "shares_outstanding_b": 24.221,
+  "net_debt_b": -51.5,
+  "sector_hint": "semiconductors",
+  "primary_method": {
+    "name": "DCF",
+    "reasoning": "NVDA is fabless, capital-light, and converts AI data-center sales into outsized FCF. A 10-year FCFF DCF captures the visible Blackwell/Rubin runway and a disciplined fade to a GDP-plus terminal. The AHF panel's distinction from GER is the cost of capital: this model uses the REAL beta (2.0, regression 2.20) rather than a softened 1.30, so WACC is 15.3% not 9.5%. Peer EV/EBITDA cross-checks because semis trade on the multiple.",
+    "inputs": {
+      "sector_hint": "semiconductors",
+      "wacc": {
+        "value": 0.153,
+        "components": {
+          "rf": 0.044,
+          "beta": 2.0,
+          "erp": 0.055,
+          "debt_weight": 0.01,
+          "cost_of_debt_after_tax": 0.035
+        },
+        "reasoning": "Ke = rf + beta x ERP = 4.4% + 2.00 x 5.5% = 15.4%. Beta 2.00 honors the REAL regression beta of 2.20 (Damodaran: do not sand it to GER's 1.30; NVDA genuinely moves ~2x the market). Debt weight ~1% immaterial ($11B debt vs $62B cash), after-tax Kd 3.5%. WACC = 0.99 x 15.4% + 0.01 x 3.5% = 15.28%, rounded 15.3%. This honest cost of capital is the entire A/B gap vs GER. Source: aswath_damodaran + valuation specialist."
+      },
+      "terminal_growth": {
+        "value": 0.04,
+        "reasoning": "Capped at the 10Y risk-free rate (4.4%, set at 4.0%). Damodaran is strict: no firm outgrows the economy forever. AI compute is a steady GDP-plus infrastructure slice by FY36. Source: aswath_damodaran."
+      },
+      "forecast_horizon_years": 10,
+      "terminal_value": {
+        "exit_ev_ebitda": 20
+      },
+      "fcf_projections": [
+        {
+          "year": 2027,
+          "fcf_b": 192.3,
+          "revenue_b": 390.8,
+          "revenue_growth_pct": 81.0,
+          "ebitda_margin": 0.63,
+          "ebit_margin": 0.6,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "FY27E (Jan-2027) consensus ~$391B = +81% off FY26 actual $215.9B. Anchored to the visible Blackwell/GB300 order book (Druckenmiller: orders committed; Damodaran: take visible near-term). EBIT margin 60% = current run-rate; fabless model keeps D&A and capex near 3% each."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 264.1,
+          "revenue_b": 551.0,
+          "revenue_growth_pct": 41.0,
+          "ebitda_margin": 0.615,
+          "ebit_margin": 0.585,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "FY28E ~$551B = +41% (Street +1y avg). Rubin platform full year + sovereign AI material. Margin eases to 58.5% as launch costs and early competition appear (Damodaran target-margin fade)."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 334.4,
+          "revenue_b": 716.3,
+          "revenue_growth_pct": 30.0,
+          "ebitda_margin": 0.6,
+          "ebit_margin": 0.57,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+30%: fade begins past $700B revenue (law of large numbers). Refresh cycle + enterprise inference offset hyperscaler optimization. Custom silicon takes some inference share (Burry, Damodaran)."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 396.9,
+          "revenue_b": 873.9,
+          "revenue_growth_pct": 22.0,
+          "ebitda_margin": 0.585,
+          "ebit_margin": 0.555,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+22%: continued fade; training stays NVDA-anchored, inference contested. EBIT margin 55.5%."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 447.7,
+          "revenue_b": 1013.7,
+          "revenue_growth_pct": 16.0,
+          "ebitda_margin": 0.57,
+          "ebit_margin": 0.54,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+16%: year-5 growth; 5y revenue CAGR lands ~38%. AI capex still expanding but maturing (Damodaran)."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 484.9,
+          "revenue_b": 1130.3,
+          "revenue_growth_pct": 11.5,
+          "ebitda_margin": 0.555,
+          "ebit_margin": 0.525,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+11.5%: double-digit growth with multiple compression as the market prices maturation. Software/networking attach provides a margin floor. EBIT 52.5%."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 515.8,
+          "revenue_b": 1226.4,
+          "revenue_growth_pct": 8.5,
+          "ebitda_margin": 0.545,
+          "ebit_margin": 0.515,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+8.5%: approaching cyclical maturity; 5-year GPU refresh supports steady-state demand. EBIT 51.5%."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 538.4,
+          "revenue_b": 1306.1,
+          "revenue_growth_pct": 6.5,
+          "ebitda_margin": 0.535,
+          "ebit_margin": 0.505,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+6.5%: mature growth; networking + software a larger mix share. EBIT 50.5%."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 553.8,
+          "revenue_b": 1371.4,
+          "revenue_growth_pct": 5.0,
+          "ebitda_margin": 0.525,
+          "ebit_margin": 0.495,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+5.0%: entering terminal; AI compute treated as infrastructure utility. EBIT 49.5%."
+        },
+        {
+          "year": 2036,
+          "fcf_b": 566.6,
+          "revenue_b": 1433.1,
+          "revenue_growth_pct": 4.5,
+          "ebitda_margin": 0.515,
+          "ebit_margin": 0.485,
+          "tax_rate": 0.16,
+          "da_pct_of_revenue": 0.03,
+          "capex_pct_of_revenue": 0.03,
+          "wc_change_pct_of_revenue": 0.012,
+          "rationale": "+4.5%: terminal-state operating profile, EBIT margin 48.5% (still elite, honestly eroded from 60% by competition and customer ASICs). Damodaran."
+        }
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Peer EV/EBITDA (AI-semi composite)",
+    "reasoning": "Semis trade on EV/EBITDA. Peer set (AMD 111x, AVGO 44x, MRVL 91x, TSM 5x) is dispersed; ex-extremes the platform-relevant median sits ~30x. NVDA, the dominant accelerator franchise, applied at 30x on forward FY28E EBITDA. This is a legitimate counterweight to the perpetuity DCF and the reason the blended target sits above the base DCF. Source: aswath_damodaran + valuation specialist.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 30.0,
+      "fy_estimate": 200.0,
+      "peers_used": [
+        "AMD",
+        "AVGO",
+        "MRVL",
+        "TSM"
+      ],
+      "reasoning": "FY28E EBITDA ~$200B (forward, FCF + capex + tax + D&A). 30x = $6,000B EV, + $51.5B net cash, / 24.221B shares = ~$249. Captures the AI-semi cohort multiple at NVDA scale. Source: valuation specialist."
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.164,
+        "terminal_g": 0.03,
+        "fcf_projections": [
+          {
+            "year": 2027,
+            "fcf_b": 169.3,
+            "revenue_b": 356.2,
+            "revenue_growth_pct": 65.0,
+            "ebitda_margin": 0.61,
+            "ebit_margin": 0.58,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 208.4,
+            "revenue_b": 463.1,
+            "revenue_growth_pct": 30.0,
+            "ebitda_margin": 0.58,
+            "ebit_margin": 0.55,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 236.1,
+            "revenue_b": 555.7,
+            "revenue_growth_pct": 20.0,
+            "ebitda_margin": 0.55,
+            "ebit_margin": 0.52,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 248.7,
+            "revenue_b": 622.4,
+            "revenue_growth_pct": 12.0,
+            "ebitda_margin": 0.52,
+            "ebit_margin": 0.49,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 251.7,
+            "revenue_b": 672.2,
+            "revenue_growth_pct": 8.0,
+            "ebitda_margin": 0.49,
+            "ebit_margin": 0.46,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 252.4,
+            "revenue_b": 705.8,
+            "revenue_growth_pct": 5.0,
+            "ebitda_margin": 0.47,
+            "ebit_margin": 0.44,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 250.2,
+            "revenue_b": 734.0,
+            "revenue_growth_pct": 4.0,
+            "ebitda_margin": 0.45,
+            "ebit_margin": 0.42,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 252.5,
+            "revenue_b": 759.7,
+            "revenue_growth_pct": 3.5,
+            "ebitda_margin": 0.44,
+            "ebit_margin": 0.41,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 253.5,
+            "revenue_b": 782.5,
+            "revenue_growth_pct": 3.0,
+            "ebitda_margin": 0.43,
+            "ebit_margin": 0.4,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          },
+          {
+            "year": 2036,
+            "fcf_b": 261.1,
+            "revenue_b": 806.0,
+            "revenue_growth_pct": 3.0,
+            "ebitda_margin": 0.43,
+            "ebit_margin": 0.4,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bear path: harder fade + margin compression to 40% terminal (AMD + customer ASICs take share, capex air-pocket). Used only in the Bear scenario key_changes."
+          }
+        ]
+      },
+      "probability": 0.25,
+      "probability_reasoning": "25%. Beta 2.2 -> WACC 16.4%, terminal 3.0%, harder fade + margin to 40%. Requires a hyperscaler capex air-pocket OR faster AMD/customer-ASIC share loss OR a multiple reset. Each is individually plausible at this valuation; the bear-lens cohort (Burry, Graham, Damodaran) plus the no-margin-of-safety neutrals justify a fatter-than-usual 25% tail.",
+      "reasoning": "Cycle peaks, custom silicon migration accelerates, gross margin compresses toward 40% terminal, growth fades hard after FY27."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "probability": 0.45,
+      "probability_reasoning": "45%. Modal path: Street near-term revenue, disciplined 10y fade, margin easing to 49% at the REAL 15.3% WACC. The honest base lands ~36% below price, which is the finding: at a fair cost of capital the market already discounts a near-flawless decade.",
+      "reasoning": "Central case. AI capex extends, Rubin ramps on plan, margins ease gracefully, custom silicon takes some inference share but training stays NVDA-locked."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.134,
+        "terminal_g": 0.042,
+        "fcf_projections": [
+          {
+            "year": 2027,
+            "fcf_b": 199.9,
+            "revenue_b": 399.4,
+            "revenue_growth_pct": 85.0,
+            "ebitda_margin": 0.64,
+            "ebit_margin": 0.61,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 294.8,
+            "revenue_b": 599.1,
+            "revenue_growth_pct": 50.0,
+            "ebitda_margin": 0.63,
+            "ebit_margin": 0.6,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 399.8,
+            "revenue_b": 826.8,
+            "revenue_growth_pct": 38.0,
+            "ebitda_margin": 0.62,
+            "ebit_margin": 0.59,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 510.8,
+            "revenue_b": 1074.8,
+            "revenue_growth_pct": 30.0,
+            "ebitda_margin": 0.61,
+            "ebit_margin": 0.58,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 616.5,
+            "revenue_b": 1332.8,
+            "revenue_growth_pct": 24.0,
+            "ebitda_margin": 0.595,
+            "ebit_margin": 0.565,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 707.7,
+            "revenue_b": 1572.7,
+            "revenue_growth_pct": 18.0,
+            "ebitda_margin": 0.58,
+            "ebit_margin": 0.55,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 791.7,
+            "revenue_b": 1792.9,
+            "revenue_growth_pct": 14.0,
+            "ebitda_margin": 0.57,
+            "ebit_margin": 0.54,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 854.3,
+            "revenue_b": 1972.1,
+            "revenue_growth_pct": 10.0,
+            "ebitda_margin": 0.56,
+            "ebit_margin": 0.53,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 900.6,
+            "revenue_b": 2120.1,
+            "revenue_growth_pct": 7.5,
+            "ebitda_margin": 0.55,
+            "ebit_margin": 0.52,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          },
+          {
+            "year": 2036,
+            "fcf_b": 926.9,
+            "revenue_b": 2226.1,
+            "revenue_growth_pct": 5.0,
+            "ebitda_margin": 0.54,
+            "ebit_margin": 0.51,
+            "tax_rate": 0.16,
+            "da_pct_of_revenue": 0.03,
+            "capex_pct_of_revenue": 0.03,
+            "wc_change_pct_of_revenue": 0.012,
+            "rationale": "Bull path: sustained 50%+ growth deeper into the window, margin holds 51% terminal (Rubin overshoots, sovereign AI prints, HBM4 yields). Used only in the Bull scenario key_changes."
+          }
+        ]
+      },
+      "probability": 0.15,
+      "probability_reasoning": "15%. Beta 1.65 (US-semi bottom-up) -> WACC 13.4%, terminal 4.2%, sustained 50%+ growth + 51% terminal margin. Requires Rubin to overshoot, sovereign AI to print $80B+, and HBM4 yields to re-expand gross margin. Only at this softer (still-defensible) cost of capital does intrinsic value clear today's price.",
+      "reasoning": "AI capex extends another leg, sovereign AI prints meaningfully, Rubin overshoots customer commitments, margins hold."
+    }
+  ],
+  "blending_weights": {
+    "cross_check": 0.15
+  },
+  "weights_reasoning": "Bear 0.25 + Base 0.45 + Bull 0.15 + cross-check 0.15 = 1.00. The cross-check carries a 15% weight (matching GER) because, while semis do trade on EV/EBITDA, the panel's central tension is precisely that the perpetuity DCF at an honest cost of capital says fair value is well below price; over-weighting the relative multiple would paper over that finding. The bear weight (25%, vs GER's 15%) reflects three explicit bearish personas (Burry, Graham, Damodaran) plus five bull-lens personas who went neutral solely on valuation. Bull at 15% (below base) because it needs both a lower beta AND sustained hypergrowth."
+}
