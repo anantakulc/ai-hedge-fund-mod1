@@ -1,0 +1,41 @@
+{
+  "persona": "charlie_munger",
+  "lens": "bull",
+  "signal": "neutral",
+  "confidence": 52,
+  "reasoning": "AI is both moat-extender (Now Assist) and existential threat (agents bypass ITSM). Moat real but 35x EV/EBITDA leaves no safety margin for disruption.",
+  "ai_disruption_view": {
+    "opportunity": "Now Assist embeds AI natively into existing workflow fabric where data already lives. Consumption pricing unlocks upside beyond seats. Customers automate more, spend more. Lollapalooza: platform stickiness + AI upsell + 76% gross margin compounding. FCF CAGR 28% over 3 years confirms execution.",
+    "threat": "AI agents (Copilot, Agentforce, open-source) could route around enterprise workflow middleware entirely. If LLMs handle incident triage and change management end-to-end without human-in-the-loop, ITSM seat demand erodes structurally. ITSM commoditizes if open-source agents replicate core ticket-routing cheaply. New entrants attack from below. IT headcount shrinks as AI replaces admins, cutting license demand at the root.",
+    "net_assessment": "The inversion is not far-fetched -- it is actively being attempted by every major hyperscaler and dozens of startups. ServiceNow's workflow data moat and 20-year lock-in are real, but so is the threat. At 35x EV/EBITDA and 4.3% FCF yield, the price does not compensate for this binary risk. Munger would want a bigger margin of safety before committing. Result: neutral, not bullish."
+  },
+  "key_metrics": {
+    "moat_durability_score_1_10": 6,
+    "mgmt_capital_allocation_grade": "B",
+    "lollapalooza_factors_count": 2,
+    "fcf_yield_pct": 4.3,
+    "inversion_disasters_count": 3
+  },
+  "inversion_disasters": [
+    "AI agents bypass ITSM layer entirely -- agentic workflows need no middleware, collapsing seat demand",
+    "ITSM commoditizes as LLMs commoditize ticket triage and change management, destroying pricing power",
+    "Hyperscalers (MSFT, GOOG) bundle workflow orchestration into cloud contracts, squeezing NOW on price"
+  ],
+  "capital_allocation_notes": "Buybacks ramped from $0 (2022) to $1.84B (2025) as FCF scaled -- sensible timing. No major M&A premium destruction observed. Net cash positive ($2.8B). Grade B, not A: operating margins at 13% are thin for a 76% gross-margin SaaS business, implying heavy reinvestment or cost discipline failure.",
+  "valuation_sanity": {
+    "price_used": 102.15,
+    "market_cap_B": 105.3,
+    "fcf_2025_B": 4.53,
+    "fcf_yield_pct": 4.3,
+    "forward_pe": 20.3,
+    "ev_ebitda": 35.5,
+    "peg": 0.99,
+    "revenue_growth_yoy_pct": 20.9,
+    "comment": "PEG near 1 looks fair for a compounder, but EV/EBITDA at 35x leaves no margin of safety if AI disruption slows growth to 10-12%. FCF yield of 4.3% is acceptable but not cheap for a business facing a structural threat."
+  },
+  "data_gaps": [
+    "Now Assist ARR breakout not available in yfinance -- key for sizing AI opportunity",
+    "Net Revenue Retention trend not available in public filings via yfinance",
+    "AI agent competitive displacement data not quantifiable from public sources"
+  ]
+}

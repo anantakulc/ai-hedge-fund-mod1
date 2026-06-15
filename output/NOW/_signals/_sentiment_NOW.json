@@ -1,0 +1,44 @@
+{
+  "specialist": "sentiment",
+  "signal": "neutral",
+  "confidence": 9,
+  "reasoning": {
+    "insider_trading": {
+      "signal": "bearish",
+      "confidence": 31,
+      "metrics": {
+        "total_trades": 19,
+        "bullish_trades": 1,
+        "bearish_trades": 18,
+        "bullish_weighted_shares": 28682,
+        "bearish_weighted_shares": 62603,
+        "weight": 0.3,
+        "weighted_score": 0.0943
+      }
+    },
+    "news_sentiment": {
+      "signal": "bullish",
+      "confidence": 30,
+      "metrics": {
+        "total_articles": 10,
+        "bullish_articles": 3,
+        "bearish_articles": 0,
+        "neutral_articles": 7,
+        "weight": 0.7,
+        "weighted_score": 0.455
+      }
+    },
+    "combined_analysis": {
+      "total_weighted_bullish": 0.5493,
+      "total_weighted_bearish": 0.4507,
+      "signal_determination": "Insider trading is bearish: CEO McDermott purchased 28,682 shares at ~$105 (Feb 2026, notable conviction), but is outweighed by 18 directional sales totaling 62,603 shares across directors and officers over the same period. Insider score of 0.31 falls below 0.45 threshold (bearish). News sentiment is bullish: 3 of 10 articles carry direct bullish framing (NOW raises 2026 AI revenue target to $1.5B, ServiceNow-IBM AI alliance, and explicit buy thesis), 0 bearish, 7 neutral; news score maps to 0.65 (above 0.55 threshold). Combined weighted score = 0.30 x 0.3142 + 0.70 x 0.65 = 0.0943 + 0.4550 = 0.5493. Lands in the 0.45-0.55 neutral band, slightly above midpoint. Low sample size (10 news articles, 19 insider trades) constrains confidence. The CEO open-market purchase is a positive signal but isolated against broad insider selling trend."
+    }
+  },
+  "data_gaps": [
+    "FUNDA_API_KEY not set; insider data sourced from yfinance insider_transactions (limited historical depth and no 10b5-1 plan flags).",
+    "ADANOS_API_KEY not set; news sentiment sourced from yfinance Ticker.news (10 articles only, below optimal 100-article target).",
+    "News sample below 100 articles; confidence proportionally reduced. 7 of 10 articles are not directly about NOW or are macro pieces.",
+    "Insider transaction 'Text' field for rows without value (NaN) is ambiguous (vesting vs. sale); those rows excluded from directional count.",
+    "No 10b5-1 plan metadata available via yfinance; routine plan sales cannot be discounted."
+  ]
+}

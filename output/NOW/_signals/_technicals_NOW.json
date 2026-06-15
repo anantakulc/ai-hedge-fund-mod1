@@ -1,0 +1,71 @@
+{
+  "specialist": "technicals",
+  "signal": "bearish",
+  "confidence": 60,
+  "reasoning": {
+    "trend_following": {
+      "signal": "neutral",
+      "confidence": 45,
+      "metrics": {
+        "ema_8": 108.3342,
+        "ema_21": 107.5038,
+        "ema_55": 105.4643,
+        "adx": 21.837,
+        "di_plus": 27.6426,
+        "di_minus": 32.1033,
+        "stack_aligned": false,
+        "trend_defined_adx_gt25": false
+      }
+    },
+    "mean_reversion": {
+      "signal": "neutral",
+      "confidence": 50,
+      "metrics": {
+        "z_score_50d": 0.2444,
+        "rsi_14": 46.2457,
+        "rsi_28": 48.4325,
+        "bb_position": 0.3335,
+        "bb_lower": 87.8086,
+        "bb_upper": 130.8164
+      }
+    },
+    "momentum": {
+      "signal": "bearish",
+      "confidence": 0,
+      "metrics": {
+        "return_1m_pct": 12.8729,
+        "return_3m_pct": -11.0811,
+        "return_6m_pct": -41.1232,
+        "weighted_return_pct": -10.5121,
+        "volume_confirms": true,
+        "up_day_avg_vol": 37973727,
+        "down_day_avg_vol": 32299960
+      }
+    },
+    "volatility": {
+      "signal": "bearish",
+      "confidence": 0,
+      "metrics": {
+        "vol_regime": "elevated",
+        "hv20_pct": 90.1008,
+        "hv252_pct": 50.7887,
+        "vol_percentile_252d": 94.44,
+        "vol_z_score_252d": 2.1603,
+        "atr_ratio": 1.2306
+      }
+    },
+    "statistical_arbitrage": {
+      "signal": "neutral",
+      "confidence": 50,
+      "metrics": {
+        "hurst_exponent": 0.5254,
+        "regime_type": "random_walk",
+        "skewness": -0.8258,
+        "kurtosis": 7.098
+      }
+    },
+    "ensemble_weighted_score": 0.2875,
+    "components_in_agreement": 3
+  },
+  "data_gaps": []
+}

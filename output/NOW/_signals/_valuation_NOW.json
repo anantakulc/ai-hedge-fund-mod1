@@ -1,0 +1,72 @@
+{
+  "specialist": "valuation",
+  "ticker": "NOW",
+  "as_of_price": 102.15,
+  "as_of_date": "2026-06-12",
+  "signal": "bearish",
+  "confidence": 70,
+  "reasoning": {
+    "dcf_analysis": {
+      "signal": "bullish",
+      "implied_value_per_share": 132.34,
+      "market_cap_billions": 105.35,
+      "gap_pct": 29.6,
+      "weight": 0.25,
+      "wacc_pct": 9.02,
+      "bear_case_value_per_share": 98.02,
+      "base_case_value_per_share": 132.34,
+      "bull_case_value_per_share": 192.88,
+      "note": "Multi-stage FCFF off FY25 FCF of 4.53B. High-stage growth 16% decaying to 8%, transition taper to 3.5% terminal. Net cash of 1.32B added back. Cash-flow-based view sees upside because reported FCF dwarfs GAAP earnings (large SBC add-back). AI lens: Now Assist / agentic upsell supports the high-growth schedule; offsetting ITSM-commoditization risk is captured in the bear path (13% high-growth, +100bps WACC)."
+    },
+    "owner_earnings_analysis": {
+      "signal": "bearish",
+      "implied_value_per_share": 33.33,
+      "gap_pct": -67.4,
+      "weight": 0.25,
+      "details": "Owner earnings: 1.55B (NI 1.748B + D&A 0.738B - Capex 0.911B - WC change 0.029B). Discount 10%, 12% 5y growth, 3% GDP-capped terminal. Buffett-style start from GAAP net income heavily penalizes ServiceNow's stock-based-comp-loaded cost structure; this is the most conservative of the four methods and a deliberate downside anchor."
+    },
+    "ev_ebitda_analysis": {
+      "signal": "bearish",
+      "implied_value_per_share": 39.08,
+      "gap_pct": -61.7,
+      "weight": 0.25,
+      "historical_median_multiple": 30.0,
+      "peer_median_multiple": 12.9,
+      "note": "FY25 EBITDA 3.022B (EBIT 2.284B + D&A 0.738B). Rule applies lower of own-history (~30x for high-growth SaaS) and clean mature-peer median (12.9x: CRM 12.9, WDAY 21.0, ADBE 8.7; excluded DDOG/TEAM/PANW whose near-zero GAAP EBITDA distorts the ratio). Peer-floor of 12.9x is punitive for a 22%-revenue-grower but is the rule-compliant figure."
+    },
+    "residual_income_analysis": {
+      "signal": "bearish",
+      "implied_value_per_share": 74.03,
+      "gap_pct": -27.5,
+      "weight": 0.25,
+      "book_value_per_share": 11.372,
+      "cost_of_equity_pct": 9.14,
+      "note": "Edwards-Bell-Ohlson: BV 11.37/sh + PV of residual income at normalized forward ROE 20% vs CoE 9.14%, full retention, 10y horizon + 3% fading terminal. Positive excess returns lift value well above book but not to current price."
+    },
+    "dcf_scenario_analysis": {
+      "bear_case": 98.02,
+      "base_case": 132.34,
+      "bull_case": 192.88,
+      "wacc_used": 9.02,
+      "fcf_periods_analyzed": 10
+    },
+    "aggregate_implied_value_per_share": 69.70,
+    "aggregate_signal_direction": "bearish",
+    "method_agreement_count": 3
+  },
+  "capm_inputs": {
+    "beta": 0.927,
+    "risk_free_rate_pct": 4.5,
+    "equity_risk_premium_pct": 5.0,
+    "cost_of_equity_pct": 9.14,
+    "cost_of_debt_after_tax_pct": 3.85,
+    "tax_rate_pct": 23.0,
+    "equity_weight": 0.978,
+    "debt_weight": 0.022,
+    "wacc_pct": 9.02
+  },
+  "data_gaps": [
+    "Owner-earnings and EV/EBITDA methods start from GAAP figures that understate ServiceNow's economic earnings due to heavy stock-based compensation; the cash-flow-based DCF gives a materially higher value, so the four-method spread (33 to 193) is wide. Three of four methods sit below price, driving a bearish aggregate despite a bullish DCF.",
+    "Peer EV/EBITDA set narrowed to CRM/WDAY/ADBE; high-growth peers (DDOG/TEAM/PANW/SNOW) excluded because near-zero or negative GAAP EBITDA makes their multiples non-meaningful."
+  ]
+}

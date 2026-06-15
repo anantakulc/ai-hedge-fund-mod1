@@ -1,0 +1,79 @@
+{
+  "specialist": "growth_agent",
+  "signal": "bullish",
+  "confidence": 77,
+  "reasoning": {
+    "historical_growth": {
+      "score": 0.85,
+      "details": {
+        "revenue_3y_cagr_pct": 22.4,
+        "operating_income_3y_cagr_pct": 72.6,
+        "fcf_3y_cagr_pct": 27.8,
+        "trend": "accelerating",
+        "note": "5y revenue CAGR unavailable (2021 not in yfinance set); 3y CAGR used. Revenue: $7.245B (2022) to $13.278B (2025). FCF: $2.173B to $4.533B. Both well above 15% and 12% bullish thresholds. Operating income expansion from 4.9% to 13.7% operating margin signals durable leverage."
+      }
+    },
+    "growth_valuation": {
+      "score": 0.80,
+      "details": {
+        "peg_ratio": 0.99,
+        "ps_trailing_12m": 7.88,
+        "ps_vs_5y_median": "below (historical P/S median for NOW approximated at 10-15x; current 7.88x is well below the 5-year median)",
+        "note": "PEG of 0.99 is strongly bullish (well below 1.5 threshold). P/S of 7.88x for a 22%+ revenue grower with 77% gross margins and sticky enterprise contracts is below historical norms and below high-quality SaaS peer medians (~10x for comparable growth profiles)."
+      }
+    },
+    "margin_expansion": {
+      "score": 0.72,
+      "details": {
+        "gross_margin_trajectory": "slightly_compressing",
+        "gross_margin_pct_2022_to_2025": [78.3, 78.6, 79.2, 77.5],
+        "op_margin_trajectory": "strongly_expanding",
+        "op_margin_pct_2022_to_2025": [4.9, 8.5, 12.4, 13.7],
+        "net_margin_trajectory": "stable",
+        "net_margin_pct_2022_to_2025": [4.5, 19.3, 13.0, 13.2],
+        "note": "Operating margin expansion from 4.9% to 13.7% over 3 years is the dominant trend and is strongly bullish. Gross margin ticked down 170bps in 2025 (professional services mix shift); not alarming but warrants monitoring. Net margin 2023 spike was a tax/one-time benefit; 2024-2025 normalized around 13%."
+      }
+    },
+    "insider_conviction": {
+      "score": 0.75,
+      "details": {
+        "net_flow_90d_shares": 25579,
+        "net_flow_pct_float": 0.0025,
+        "ceo_purchase": "MCDERMOTT WILLIAM R purchased 28,682 shares at $104.60-105.96 per share on 2026-02-27 (open market purchase, not stock grant)",
+        "sales_90d": "Small routine sales by director Briggs (1,595 shares) and officer Fipps (1,048 shares); far outweighed by CEO purchase",
+        "note": "CEO open-market purchase of ~$3M at current prices is a strong conviction signal. Routine restricted stock sales by officers do not offset this."
+      }
+    },
+    "financial_health": {
+      "score": 0.45,
+      "details": {
+        "debt_to_equity_balance_sheet": 0.19,
+        "debt_to_equity_yfinance_reported": 20.7,
+        "current_ratio": 0.845,
+        "total_debt_usd_b": 2.403,
+        "total_cash_usd_b": 5.182,
+        "net_cash_position_usd_b": 2.779,
+        "note": "Current ratio of 0.845 is below the 1.5 bullish threshold (bearish signal). However, the company holds $5.18B cash vs $2.4B total debt, yielding a net cash position of $2.78B. The D/E from balance sheet is 0.19 (low), not the 20.7 reported by yfinance (which uses a different equity base). Enterprise SaaS current ratios below 1.0 are common due to deferred revenue structuring and do not indicate liquidity risk given the strong FCF generation ($4.5B in 2025). Score held at 0.45 per framework rules (current ratio below threshold)."
+      }
+    },
+    "final_analysis": {
+      "weighted_score": 0.768,
+      "component_breakdown": {
+        "historical_growth_40pct": 0.340,
+        "growth_valuation_25pct": 0.200,
+        "margin_expansion_15pct": 0.108,
+        "insider_conviction_10pct": 0.075,
+        "financial_health_10pct": 0.045
+      },
+      "signal_threshold_logic": "score > 0.6 = bullish, < 0.4 = bearish",
+      "summary": "NOW scores 0.768 composite, well above the 0.6 bullish threshold. Revenue growth (22.4% 3y CAGR), FCF growth (27.8% 3y CAGR), PEG of 0.99, and 870bps of operating margin expansion over 3 years are all strongly bullish. CEO open-market purchase provides insider conviction. The only drag is the current ratio (0.845), which is structurally low for SaaS due to deferred revenue and does not reflect a genuine liquidity concern given $5.18B cash on hand."
+    }
+  },
+  "data_gaps": [
+    "5-year revenue CAGR unavailable (fiscal 2021 not returned by yfinance); 3-year CAGR used as proxy",
+    "EPS 5y CAGR not computed separately; operating income CAGR used as profitability proxy",
+    "P/S 5-year median approximated from sector knowledge, not a live historical pull",
+    "D/E from yfinance (20.7) is inconsistent with balance sheet calculation (0.19); balance sheet figure used",
+    "Insider net flow 90d: some rows missing transaction type label (grants mixed with sales in yfinance data); filtered to identified open-market transactions only"
+  ]
+}
