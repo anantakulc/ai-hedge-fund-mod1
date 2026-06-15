@@ -1,0 +1,27 @@
+{
+  "persona": "nassim_taleb",
+  "lens": "bear",
+  "ticker": "NOW",
+  "signal": "neutral",
+  "confidence": 42,
+  "reasoning": "Net cash balance sheet (antifragile structure) vs turkey problem: AI agents may bypass ITSM workflows entirely. No convexity -- low insider skin in the game (0.17%). Fat left tail from AI substitution risk.",
+  "key_metrics": {
+    "net_debt_to_ebitda": -0.95,
+    "earnings_volatility_5y_stddev_pct": 6.6,
+    "margin_stability_5y": "stable",
+    "insider_ownership_pct": 0.167,
+    "vol_regime": "elevated",
+    "antifragile_score_1_10": 4
+  },
+  "ai_disruption_analysis": {
+    "opportunity_convexity": "NOW embedding AI (Agentic AI, Now Assist) adds optionality -- upside if enterprise AI runs ON the platform. Gross margins 77.5% stable; FCF $5.1B suggests monetizable distribution.",
+    "threat_fat_tail": "AI agents executing tasks autonomously could make workflow orchestration software redundant. This is the turkey problem: NOW looks safe (22% revenue growth) until the paradigm shifts. Concave exposure to a category-level disruption.",
+    "net_verdict": "Concave to AI shock overall. The opportunity is real but capped (platform extension). The threat is fat-tailed and not yet priced. Via negativa: the danger is not visible in current financials -- exactly the turkey profile.",
+    "fragile_or_antifragile": "FRAGILE to AI disruption shock. The business is optimized for a world where humans need workflow software. AI agents that self-orchestrate make the product category optional. This is not a barbell -- it is a single-mode bet on enterprise inertia."
+  },
+  "data_gaps": [
+    "5-year quarterly EPS series limited to 4 quarters available from yfinance earnings_history",
+    "Insider buying/selling direction unclear -- transactions show small share counts, likely grants not open-market purchases",
+    "AI revenue mix (Now Assist contribution) not broken out in yfinance data"
+  ]
+}

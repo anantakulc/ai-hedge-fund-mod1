@@ -1,0 +1,328 @@
+{
+  "schema_version": "1.0",
+  "ticker": "NOW",
+  "currency": "USD",
+  "current_price": 102.15,
+  "shares_outstanding_b": 1.031,
+  "net_debt_b": -3.881,
+  "sector_hint": "software-infrastructure",
+  "primary_method": {
+    "name": "DCF",
+    "category": "intrinsic",
+    "reasoning": "NOW is a capital-light enterprise SaaS platform that converts subscription revenue into real cash, so a 10-year FCFF DCF is the right primary lens. The AHF distinction from GER is honesty on two fronts: the real CAPM beta of 0.927 (not sanitized) and, more importantly, owner-earnings FCF that CHARGES stock-based comp as the real cost it is, starting the margin near 18.5% rather than crediting the 32% reported FCF margin that the SBC add-back inflates. Source: aswath_damodaran (primary), valuation specialist.",
+    "inputs": {
+      "sector_hint": "software-infrastructure",
+      "wacc": {
+        "value": 0.0947,
+        "components": {
+          "rf": 0.0449,
+          "beta": 0.927,
+          "erp": 0.055,
+          "debt_weight": 0.022,
+          "cost_of_debt_after_tax": 0.0418
+        },
+        "reasoning": "Ke = rf + beta x ERP = 4.49% + 0.927 x 5.5% = 9.59%. The real regression beta of 0.927 is used as-is, not softened. After-tax Kd = 5.5% pretax x (1 - 0.24) = 4.18%. Market-value weights: equity $105.3B (97.8%), debt $2.40B (2.2%). WACC = 0.978 x 9.59% + 0.022 x 4.18% = 9.47%. Source: aswath_damodaran."
+      },
+      "terminal_growth": {
+        "value": 0.0449,
+        "reasoning": "Set AT the 10-year risk-free rate (4.49%), never above it. Damodaran discipline: no firm outgrows the economy in perpetuity. By FY35 NOW is a mature enterprise infrastructure layer growing with nominal GDP. Source: aswath_damodaran."
+      },
+      "forecast_horizon_years": 10,
+      "fcf_projections": [
+        {
+          "year": 2026,
+          "fcf_b": 3.187,
+          "revenue_b": 16.47,
+          "revenue_growth_pct": 18.0,
+          "ebitda_margin": 0.1935,
+          "rationale": "Revenue +18% off $13.96B base. Owner-earnings FCF margin 19.35%, interpolating up from the SBC-charged 18.5% start. Now Assist begins lifting price per seat while ITSM core still compounds. Source: aswath_damodaran."
+        },
+        {
+          "year": 2027,
+          "fcf_b": 3.893,
+          "revenue_b": 19.27,
+          "revenue_growth_pct": 17.0,
+          "ebitda_margin": 0.202,
+          "rationale": "Revenue +17%. Margin 20.2% as AI operating leverage and platform expansion across HR/CSM/security build. Source: aswath_damodaran."
+        },
+        {
+          "year": 2028,
+          "fcf_b": 4.706,
+          "revenue_b": 22.36,
+          "revenue_growth_pct": 16.0,
+          "ebitda_margin": 0.2105,
+          "rationale": "Revenue +16%, the assumed 5y high-stage rate. Margin 21.05%. Source: aswath_damodaran."
+        },
+        {
+          "year": 2029,
+          "fcf_b": 5.631,
+          "revenue_b": 25.71,
+          "revenue_growth_pct": 15.0,
+          "ebitda_margin": 0.219,
+          "rationale": "Revenue +15%. Margin 21.9% as the platform scales and SBC moderates as a share of revenue. Source: aswath_damodaran."
+        },
+        {
+          "year": 2030,
+          "fcf_b": 6.668,
+          "revenue_b": 29.31,
+          "revenue_growth_pct": 14.0,
+          "ebitda_margin": 0.2275,
+          "rationale": "Revenue +14%. Margin 22.75%. ITSM matures but agentic-AI orchestration widens the addressable base. Source: aswath_damodaran."
+        },
+        {
+          "year": 2031,
+          "fcf_b": 7.747,
+          "revenue_b": 32.83,
+          "revenue_growth_pct": 12.0,
+          "ebitda_margin": 0.236,
+          "rationale": "Revenue +12%. Margin 23.6%, fade underway. Source: aswath_damodaran."
+        },
+        {
+          "year": 2032,
+          "fcf_b": 8.829,
+          "revenue_b": 36.11,
+          "revenue_growth_pct": 10.0,
+          "ebitda_margin": 0.2445,
+          "rationale": "Revenue +10%. Margin 24.45% toward steady state. Source: aswath_damodaran."
+        },
+        {
+          "year": 2033,
+          "fcf_b": 9.867,
+          "revenue_b": 39.0,
+          "revenue_growth_pct": 8.0,
+          "ebitda_margin": 0.253,
+          "rationale": "Revenue +8%. Margin 25.3%. Source: aswath_damodaran."
+        },
+        {
+          "year": 2034,
+          "fcf_b": 10.912,
+          "revenue_b": 41.73,
+          "revenue_growth_pct": 7.0,
+          "ebitda_margin": 0.2615,
+          "rationale": "Revenue +7%. Margin 26.15%. Source: aswath_damodaran."
+        },
+        {
+          "year": 2035,
+          "fcf_b": 11.943,
+          "revenue_b": 44.23,
+          "revenue_growth_pct": 6.0,
+          "ebitda_margin": 0.27,
+          "rationale": "Revenue +6%, entering terminal. Owner-earnings FCF margin reaches the 27% steady-state target. Source: aswath_damodaran."
+        }
+      ]
+    }
+  },
+  "cross_check": {
+    "name": "Peer EV/EBITDA (SaaS composite)",
+    "category": "relative",
+    "reasoning": "Mature SaaS peers trade on EV/EBITDA. NOW's GAAP EV/EBITDA is optically high (~35x) because SBC depresses GAAP EBITDA; the clean mature-peer median is ~15x (CRM 12.9x, WDAY 21.0x, ADBE 8.7x). Applied to FY26E EBITDA it is a legitimate counterweight to the perpetuity DCF. Weighted at 15% because the panel's central tension is exactly that owner-earnings DCF, not the relative multiple, is the honest anchor here. Source: valuation specialist + aswath_damodaran.",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 15.0,
+      "fy_estimate": 3.4,
+      "peers_used": [
+        "CRM",
+        "WDAY",
+        "ADBE"
+      ],
+      "reasoning": "FY26E EBITDA ~$3.4B (FY25 $3.022B growing with revenue). 15x = $51.0B EV + $3.881B net cash = $54.9B equity / 1.031B shares = ~$53. The clean-peer median (15x) is punitive for a 22% grower but rule-compliant; it deliberately anchors the relative method below price. Source: valuation specialist."
+    }
+  },
+  "scenarios": [
+    {
+      "label": "Bear",
+      "key_changes": {
+        "wacc": 0.1097,
+        "terminal_g": 0.0449,
+        "fcf_projections": [
+          {
+            "year": 2026,
+            "fcf_b": 2.974,
+            "revenue_b": 15.77,
+            "revenue_growth_pct": 13.0,
+            "ebitda_margin": 0.1885,
+            "rationale": "AI THREAT path: agentic AI bypasses the workflow layer, ITSM commoditizes. Revenue +13%, margin expansion stalls toward a 22% terminal, WACC widened +150bps for elevated disruption risk. Bear key_changes only."
+          },
+          {
+            "year": 2027,
+            "fcf_b": 3.362,
+            "revenue_b": 17.51,
+            "revenue_growth_pct": 11.0,
+            "ebitda_margin": 0.192,
+            "rationale": "Bear path: growth and pricing power compress as AI agents execute work directly. Bear key_changes only."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 3.731,
+            "revenue_b": 19.09,
+            "revenue_growth_pct": 9.0,
+            "ebitda_margin": 0.1955,
+            "rationale": "Bear path: AI commoditization bites. Bear key_changes only."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 4.102,
+            "revenue_b": 20.61,
+            "revenue_growth_pct": 8.0,
+            "ebitda_margin": 0.199,
+            "rationale": "Bear path. Bear key_changes only."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 4.466,
+            "revenue_b": 22.06,
+            "revenue_growth_pct": 7.0,
+            "ebitda_margin": 0.2025,
+            "rationale": "Bear path. Bear key_changes only."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 4.816,
+            "revenue_b": 23.38,
+            "revenue_growth_pct": 6.0,
+            "ebitda_margin": 0.206,
+            "rationale": "Bear path. Bear key_changes only."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 5.143,
+            "revenue_b": 24.55,
+            "revenue_growth_pct": 5.0,
+            "ebitda_margin": 0.2095,
+            "rationale": "Bear path. Bear key_changes only."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 5.49,
+            "revenue_b": 25.78,
+            "revenue_growth_pct": 5.0,
+            "ebitda_margin": 0.213,
+            "rationale": "Bear path. Bear key_changes only."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 5.804,
+            "revenue_b": 26.81,
+            "revenue_growth_pct": 4.0,
+            "ebitda_margin": 0.2165,
+            "rationale": "Bear path. Bear key_changes only."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 6.133,
+            "revenue_b": 27.88,
+            "revenue_growth_pct": 4.0,
+            "ebitda_margin": 0.22,
+            "rationale": "Bear path: margin reaches 22% terminal. Bear key_changes only."
+          }
+        ]
+      },
+      "probability": 0.25,
+      "probability_reasoning": "25%. Growth fades from 13% to 4%, margin stalls at 22%, WACC widened to 10.97% for the disruption tail. The bear-lens cohort (Burry 68, Graham 91, Pabrai 75) plus the valuation specialist (3 of 4 methods below price) and the neutrals who flag AI as the binary swing justify a fat 25% tail. This is the world where Copilot/Agentforce intercept work before a ticket is created.",
+      "reasoning": "Agentic AI bypasses structured workflow software, generative AI commoditizes ITSM, growth and pricing power both compress."
+    },
+    {
+      "label": "Base",
+      "key_changes": {},
+      "probability": 0.5,
+      "probability_reasoning": "50%. Modal path: growth fades 18% to 6% over the decade, owner-earnings margin expands to 27% as Now Assist lifts price per seat, WACC 9.47% on the real beta. AI is net-positive but the ITSM core matures. This is the panel's central case and where the honest base lands above price.",
+      "reasoning": "AI net-positive: ServiceNow owns the workflow and the proprietary data agents need; Now Assist monetizes, platform expansion across HR/CSM/security continues, SBC charged as a real expense."
+    },
+    {
+      "label": "Bull",
+      "key_changes": {
+        "wacc": 0.0947,
+        "terminal_g": 0.0449,
+        "fcf_projections": [
+          {
+            "year": 2026,
+            "fcf_b": 3.408,
+            "revenue_b": 17.17,
+            "revenue_growth_pct": 23.0,
+            "ebitda_margin": 0.1985,
+            "rationale": "AI OPPORTUNITY path: Now Assist compounds, ServiceNow becomes the agent orchestration plane, TAM widens. Revenue +23%, margin expands toward a 32% terminal. Bull key_changes only."
+          },
+          {
+            "year": 2027,
+            "fcf_b": 4.405,
+            "revenue_b": 20.78,
+            "revenue_growth_pct": 21.0,
+            "ebitda_margin": 0.212,
+            "rationale": "Bull path: agent governance becomes a new monetization layer. Bull key_changes only."
+          },
+          {
+            "year": 2028,
+            "fcf_b": 5.575,
+            "revenue_b": 24.72,
+            "revenue_growth_pct": 19.0,
+            "ebitda_margin": 0.2255,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2029,
+            "fcf_b": 6.914,
+            "revenue_b": 28.93,
+            "revenue_growth_pct": 17.0,
+            "ebitda_margin": 0.239,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2030,
+            "fcf_b": 8.4,
+            "revenue_b": 33.27,
+            "revenue_growth_pct": 15.0,
+            "ebitda_margin": 0.2525,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2031,
+            "fcf_b": 9.999,
+            "revenue_b": 37.59,
+            "revenue_growth_pct": 13.0,
+            "ebitda_margin": 0.266,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2032,
+            "fcf_b": 11.662,
+            "revenue_b": 41.73,
+            "revenue_growth_pct": 11.0,
+            "ebitda_margin": 0.2795,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2033,
+            "fcf_b": 13.326,
+            "revenue_b": 45.48,
+            "revenue_growth_pct": 9.0,
+            "ebitda_margin": 0.293,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2034,
+            "fcf_b": 14.916,
+            "revenue_b": 48.67,
+            "revenue_growth_pct": 7.0,
+            "ebitda_margin": 0.3065,
+            "rationale": "Bull path. Bull key_changes only."
+          },
+          {
+            "year": 2035,
+            "fcf_b": 16.507,
+            "revenue_b": 51.59,
+            "revenue_growth_pct": 6.0,
+            "ebitda_margin": 0.32,
+            "rationale": "Bull path: margin reaches 32% terminal as operating leverage compounds. Bull key_changes only."
+          }
+        ]
+      },
+      "probability": 0.1,
+      "probability_reasoning": "10%. Growth sustains 23% fading to 6%, margin reaches 32%, WACC held at base 9.47%. Requires Now Assist to compound hard AND ServiceNow to win the agent-orchestration layer outright. Bill Ackman (82 conf, DCF intrinsic $153) and Cathie Wood (TAM $300B by 2030) carry this. Priced thin at 10% because it needs the AI tail to break the company's way decisively.",
+      "reasoning": "Now Assist monetization compounds, AI agents widen TAM with ServiceNow as the orchestration plane, operating leverage drives FCF margin toward 32%."
+    }
+  ],
+  "blending_weights": {
+    "cross_check": 0.15
+  },
+  "weights_reasoning": "Bear 0.25 + Base 0.50 + Bull 0.10 + cross-check 0.15 = 1.00. The cross-check carries 15% (matching GER) because, while mature SaaS trades on EV/EBITDA, the panel's central tension is precisely that the owner-earnings DCF at the real cost of capital is the honest anchor, and the clean-peer multiple sits far below price largely because SBC distorts GAAP EBITDA. Bear at 25% (above GER's typical 15%) reflects three explicit bears (Burry, Graham, Pabrai), the bearish valuation specialist (3 of 4 methods below price), and the neutrals who flag the unpriced AI-disruption tail. Bull at only 10% because it needs both sustained hypergrowth and a decisive AI win. Base 50% is the modal path."
+}

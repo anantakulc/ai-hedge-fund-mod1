@@ -1,0 +1,36 @@
+{
+  "persona": "michael_burry",
+  "lens": "bear",
+  "ticker": "NOW",
+  "signal": "bearish",
+  "confidence": 68,
+  "reasoning": "FCF yield 4.3% -- below my 5% floor. EV/EBIT 44.9x -- no deep value here at any angle. Market cap $105B on $4.5B FCF is 22.6x EV/FCF. SBC ~$1.8B annually eats 40% of reported FCF; real shareholder FCF yield is closer to 2.7%. Debt-to-equity clean at 0.19, net cash $2.8B -- balance sheet fine. Insider net buying +498k shares last 6m is the lone bull signal. AI dual thesis: Now Assist is real incremental revenue, not a moat -- every hyperscaler sells workflow AI now. The disruption risk is genuine and underpriced: agentic AI (Copilot, Salesforce Agentforce, startups) attacks ITSM ticketing directly, the core monetization engine. At $102 the stock prices in 22%+ perpetual revenue growth. Any deceleration -- AI substitution, enterprise budget shift -- and FCF multiples compress hard. Bear case: 20% FCF miss + 25x multiple = $88/share. Valuation leaves no margin of safety. Pass.",
+  "key_metrics": {
+    "fcf_yield_pct": 4.3,
+    "ev_to_ebit": 44.9,
+    "ev_to_fcf": 22.6,
+    "fcf_adj_for_sbc_yield_pct": 2.7,
+    "debt_to_equity": 0.19,
+    "net_cash_bn": 2.78,
+    "current_ratio": 0.845,
+    "insider_net_flow_90d_shares": 498874,
+    "share_count_change_yoy_pct": 0.46,
+    "sbc_annual_bn": 1.78,
+    "revenue_growth_yoy_pct": 20.9,
+    "fcf_margin_pct": 34.1,
+    "downside_target_per_share": 88.0,
+    "forward_pe": 20.3
+  },
+  "ai_disruption_assessment": {
+    "opportunity": "Now Assist (GenAI embedded in platform) adds AI SKU upsell to existing enterprise contracts. 22% revenue growth suggests AI monetization is real and landing. High switching costs (workflow automation deeply embedded) give time to adapt.",
+    "threat": "Agentic AI (Microsoft Copilot, Salesforce Agentforce, vertical-specific AI agents) attacks ITSM ticket routing and resolution directly -- the billable event that drives ServiceNow's per-seat/consumption model. Commoditization of ITSM logic is the structural bear case. If AI resolves tickets autonomously, enterprises question why they pay $X per seat for the workflow layer.",
+    "burry_verdict": "AI threat is real and the valuation prices in zero disruption probability. That asymmetry is dangerous at 44.9x EV/EBIT. Not a short -- balance sheet and FCF generation are real -- but no margin of safety for a long."
+  },
+  "data_gaps": [
+    "Insider trade timestamps not available via yfinance -- 6-month window used from insider_purchases summary",
+    "Off-balance-sheet deferred revenue obligations not fully decomposed",
+    "Congressional trade data not pulled"
+  ],
+  "price_at_analysis": 102.15,
+  "analysis_date": "2026-06-15"
+}

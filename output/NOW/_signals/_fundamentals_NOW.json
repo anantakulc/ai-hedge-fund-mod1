@@ -1,0 +1,72 @@
+{
+  "specialist": "fundamentals",
+  "ticker": "NOW",
+  "signal": "neutral",
+  "confidence": 25,
+  "reasoning": "Valuation is the weakest dimension (0.00): P/E of 60.8 misses the <25 threshold by a wide margin, P/B of 9.0 exceeds the <3 limit, and P/S of 7.5 exceeds the <5 limit -- all three criteria missed. Financial health scores 0.67: the current ratio of 0.85 fails the >1.5 hurdle (driven by large deferred revenue in current liabilities, a SaaS structural artifact), debt-to-equity of 0.19 passes the <0.5 test, and FCF-to-net-income of 2.59 comfortably clears the >0.8 conversion threshold. Profitability scores 0.67: ROE of 16.1% clears the >15% bar; net profit margin of 13.2% misses the >20% threshold; operating margin of 13.7% misses the >15% threshold -- two of three met. Growth is the strongest dimension at 1.00: revenue grew 20.9% YoY (exceeds >10%), earnings grew 22.7% YoY (exceeds >10%), and book value grew 34.9% YoY (exceeds >10%). Aggregate score 0.585 falls in the neutral band (0.40-0.60). One dimension (growth) scores >=0.67, yielding confidence of 25.",
+  "scores": {
+    "profitability": {
+      "value": 0.6667,
+      "met_criteria": [
+        "ROE > 15% (actual: 16.1%)"
+      ],
+      "missed_criteria": [
+        "Net profit margin > 20% (actual: 13.2%)",
+        "Operating margin > 15% (actual: 13.7%)"
+      ],
+      "details": {
+        "roe_pct": 16.07,
+        "net_margin_pct": 13.16,
+        "operating_margin_pct": 13.74
+      }
+    },
+    "growth": {
+      "value": 1.0,
+      "met_criteria": [
+        "Revenue growth > 10% YoY (actual: 20.9%)",
+        "Earnings growth > 10% YoY (actual: 22.7%)",
+        "Book value growth > 10% YoY (actual: 34.9%)"
+      ],
+      "missed_criteria": [],
+      "details": {
+        "revenue_growth_yoy_pct": 20.88,
+        "earnings_growth_yoy_pct": 22.67,
+        "book_value_growth_yoy_pct": 34.92
+      }
+    },
+    "financial_health": {
+      "value": 0.6667,
+      "met_criteria": [
+        "Debt-to-equity < 0.5 (actual: 0.19)",
+        "FCF / Net Income > 0.8 (actual: 2.59)"
+      ],
+      "missed_criteria": [
+        "Current ratio > 1.5 (actual: 0.85 -- depressed by $8.3B deferred revenue in current liabilities, a SaaS structural feature)"
+      ],
+      "details": {
+        "current_ratio": 0.845,
+        "debt_to_equity": 0.1854,
+        "fcf_to_net_income": 2.5932
+      }
+    },
+    "valuation": {
+      "value": 0.0,
+      "met_criteria": [],
+      "missed_criteria": [
+        "P/E < 25 (actual: 60.8)",
+        "P/B < 3 (actual: 9.0)",
+        "P/S < 5 (actual: 7.5)"
+      ],
+      "details": {
+        "pe": 60.8,
+        "pb": 9.0,
+        "ps": 7.5
+      }
+    },
+    "aggregate_score": 0.5833
+  },
+  "data_gaps": [
+    "netMargins not returned directly by yfinance info; computed from income statement (net income / total revenue)",
+    "yfinance debtToEquity field returned 20.728 (appears to be scaled by 100); recomputed from balance sheet as totalDebt / stockholdersEquity = 0.1854"
+  ]
+}

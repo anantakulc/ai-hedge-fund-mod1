@@ -1,0 +1,49 @@
+{
+  "specialist": "news_sentiment",
+  "signal": "bullish",
+  "confidence": 52,
+  "reasoning": {
+    "news_sentiment": {
+      "signal": "bullish",
+      "confidence": 52,
+      "metrics": {
+        "total_articles": 10,
+        "bullish_articles": 3,
+        "bearish_articles": 0,
+        "neutral_articles": 7,
+        "articles_classified_by_llm": 5,
+        "weighted_sentiment_score": 0.69
+      }
+    },
+    "top_3_headlines_referenced": [
+      {
+        "headline": "Can Strong Demand in Now Assist Boost ServiceNow's AI Revenue Growth?",
+        "sentiment": "bullish",
+        "confidence": 80,
+        "summary": "NOW raises 2026 AI revenue target to $1.5B citing strong Now Assist adoption driving larger customer investments and broader AI deployments; beat-and-raise narrative on AI monetization."
+      },
+      {
+        "headline": "ServiceNow IBM AI Alliance Targets Legacy Bottlenecks And Valuation Expectations",
+        "sentiment": "bullish",
+        "confidence": 75,
+        "summary": "NOW and IBM expand partnership to deliver joint AI solutions for legacy modernization, data governance, and autonomous infrastructure; tangible TAM expansion into large-enterprise transformation budgets."
+      },
+      {
+        "headline": "Is ServiceNow, Inc. (NOW) A Good Stock To Buy Now?",
+        "sentiment": "bullish",
+        "confidence": 60,
+        "summary": "Insider Monkey summarizes a bullish Substack thesis on NOW; notes forward P/E of 28x and frames the valuation as reasonable for the AI growth profile, though trailing P/E of 71x is a qualifier."
+      }
+    ],
+    "price_action_note": "NOW closed at $102.15 on 2026-06-12, down from $135.86 on 2026-06-01 -- a 25% decline in approximately two weeks. No article in this feed explains the price drop. The 52-week range is $81.24 to $211.48, placing the current price near the lower quartile. The absence of bearish news despite severe price deterioration is itself a signal gap: the negative catalyst may be reflected in pricing but not in recent yfinance-served articles.",
+    "ai_narrative_assessment": "News flow is uniformly AI-as-opportunity: IBM partnership, Now Assist revenue target raise, Cognizant ecosystem integration. Zero articles frame AI as a threat to NOW (no agentic-AI-replaces-ITSM narrative visible in this feed). This is notable given the price action and may indicate the bearish thesis is valuation-based (multiple compression on AI software broadly) rather than fundamental/narrative-based."
+  },
+  "data_gaps": [
+    "yfinance returned only 10 articles (target: up to 100); confidence reduced proportionally per spec",
+    "No ADANOS_API_KEY set; finance-sentiment cross-source supplemental data unavailable",
+    "No FUNDA_API_KEY set; Funda news endpoint unavailable",
+    "Barron's analyst-attention article (Jun 12) is paywalled; sentiment direction unverifiable from summary alone",
+    "The ~25% price decline from $136 to $102 over two weeks is not explained by any article in this feed; the negative catalyst driving the weekly drop is not captured -- this is a material gap in news coverage",
+    "No articles explicitly covering AI-as-threat (agentic AI disrupting ITSM/workflow automation incumbents) appeared in this feed despite that narrative being a known bear thesis for NOW"
+  ]
+}
